@@ -1,0 +1,31 @@
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.socials__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+}
+
+.socials__item {
+    display: flex;
+}
+
+.socials__link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEEEF;
+    border-radius: 50%;
+}
+
+.socials__link svg {
+    display: flex;
+}

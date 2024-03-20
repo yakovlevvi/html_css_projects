@@ -1,0 +1,38 @@
+.header {
+  padding: 16px 0;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 157px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-link {
+  display: flex;
+  margin: 0 auto 0 0;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__btn-wrapper {
+  border: 1px solid #DBDFEC;
+  padding: 20px 6px;
+  border-radius: 12px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__lang-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 16px;
+}

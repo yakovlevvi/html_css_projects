@@ -1,0 +1,26 @@
+.location {
+    display: grid;
+    gap: 12px;
+    font-family: "Foros", "Arial", sans-serif;
+}
+
+.location__name {
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 40%;
+    margin: 0;
+}
+
+.location__adress {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    font-style: normal;
+}
+
+.location__link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+}

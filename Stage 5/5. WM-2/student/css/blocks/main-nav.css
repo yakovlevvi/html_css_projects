@@ -1,0 +1,14 @@
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-nav__link {
+    font-size: 14px;
+    line-height: 20px;
+}

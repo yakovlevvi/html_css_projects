@@ -1,0 +1,24 @@
+.header {
+    background: linear-gradient(90deg, #415BD2 0%, #8DA1F7 100%);
+}
+
+.header__nav {
+    border-bottom: 1px solid #FFFFFF33
+}
+
+.header__info {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-link {
+    display: flex;
+}
+
+.header__users {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+.safety {
+    margin: 0 0 53px;
+}
+
+.safety__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 290px;
+    gap: 60px 160px;
+}
+
+.safety__inner {
+    display: grid;
+    gap: 20px;
+}
+
+.safety__img {
+    border-radius: 20px;
+}
+
+.safety__info {
+    grid-column: span 2;
+}

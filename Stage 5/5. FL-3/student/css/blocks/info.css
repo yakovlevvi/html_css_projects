@@ -1,0 +1,65 @@
+.info {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info__doc-link {
+    background-color: #F6EEFB;
+    border-radius: 20px;
+    padding: 23px 20px;
+    display: grid;
+    gap: 5px 10px;
+    grid-template-columns: 44px 1fr;
+}
+
+.info__img {
+    grid-row: span 2;
+}
+
+.info__doc-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.info__description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 50%;
+    margin: 0;
+}
+
+.info__contacts {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.info__tel {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    display: flex;
+    gap: 12px;
+    align-items: center; 
+    margin: 0 0 5px;
+    padding: 16px;
+}
+
+.info__contact-note {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.info__tel-note {
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 50%;
+    margin: 0;
+}

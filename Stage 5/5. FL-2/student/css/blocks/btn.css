@@ -1,0 +1,28 @@
+.btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-family: "Exo-2", "Arial", sans-serif;
+    cursor: pointer;
+    color: inherit;
+}
+
+.btn--purple {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #9E5FC4;
+    border-radius: 60px;
+    color: #9E5FC4;
+    display: block;
+}
+
+.btn--fill {
+    background-color: #9E5FC4;
+    color: #FFFFFF;
+}
+
+

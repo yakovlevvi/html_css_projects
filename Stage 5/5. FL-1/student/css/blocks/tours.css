@@ -1,0 +1,16 @@
+.tours {
+  margin: 0 0 60px;
+}
+
+.tours__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tours__item--flat {
+  grid-column: span 2;
+}

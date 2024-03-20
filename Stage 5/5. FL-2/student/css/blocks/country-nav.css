@@ -1,0 +1,44 @@
+.country-nav {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 25px 25px 20px;
+}
+
+.country-nav__all-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9E5FC4;
+}
+
+.country-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 0 25px;
+}
+
+.country-nav__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.country-nav__img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.country-nav__text {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+}

@@ -1,0 +1,42 @@
+.achievements {
+    display: flex;
+    list-style-type: none;
+    background-color: #28292D;
+    border-radius: 20px;
+    padding: 40px 50px;
+    gap: 70px;
+    margin: 0 0 120px;
+    
+}
+
+.achievements__item {
+    width: 33%;
+}
+
+.achievements__box {
+    display: flex;
+    flex-direction: column;
+    color: #26AA9A;
+    margin: 0 0 15px;
+}
+
+.achievements__box--accent {
+    color: #54E9A1;
+}
+
+.achievements__number {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.achievements__note {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.achievements__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}

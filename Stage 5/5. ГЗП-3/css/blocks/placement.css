@@ -1,0 +1,22 @@
+.placement {
+    padding: 100px 0;
+}
+
+.placement__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+    max-width: 520px;
+    margin: 0 auto 40px;
+}
+
+.placement__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+}

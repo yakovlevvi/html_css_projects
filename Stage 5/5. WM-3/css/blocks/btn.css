@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    cursor: pointer;
+}
+
+.btn--border {
+    border: 2px solid #FFFFFF;
+    border-radius: 60px;
+    padding: 10px;
+    min-width: 165px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}

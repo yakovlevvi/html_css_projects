@@ -1,0 +1,12 @@
+.team {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team__member {
+    width: calc(50% - 15px);
+}

@@ -1,0 +1,83 @@
+.special-card {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #F4F6FA;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 100%;
+}
+
+.special-card--rate {
+  background-image: url(../../img/special-rate1.png);
+}
+
+.special-card--subscription {
+  background-image: url(../../img/special-subscribtion1.png);
+}
+
+.special-card--mobile {
+  background-image: url(../../img/special-mobile1.png);
+}
+
+.special-card--cashback {
+  background-image: url(../../img/special-cashback1.png);
+}
+
+.special-card--account {
+  background-image: url(../../img/special-account1.png);
+}
+
+.special-card--auto {
+  background-image: url(../../img/special-auto1.png);
+}
+
+.special-card--bg-blue {
+  background-color: #5E81FF;
+  color: #ffffff;
+}
+
+.special-card__info {
+  display: grid;
+  gap: 8px;
+}
+
+.special-card__heading {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.special-card__text {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.special-card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  padding-top: 4px;
+  padding-left: 15px;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.special-card__link {
+  padding: 10px;
+  width: 40px;
+  margin: 0 0 0 auto;
+}
+
+.special-card--bg-blue .special-card__link {
+  background: #FF8516;
+}

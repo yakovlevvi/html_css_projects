@@ -1,0 +1,55 @@
+.header {
+    padding: 16px 0;
+}
+
+.header__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 204px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 142px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__info {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__users {
+    display: flex;
+    gap: 20px;
+}
+
+.header__lang {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header__tel {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}

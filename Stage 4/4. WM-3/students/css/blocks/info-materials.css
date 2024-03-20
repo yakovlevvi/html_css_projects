@@ -1,0 +1,16 @@
+.info-materials {
+    list-style-type: none;
+    display: flex;
+    gap: 60px 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.info-materials__item {
+    width: calc(50% - 15px);
+}
+
+.info-materials__item--list {
+    width: 100%;
+}

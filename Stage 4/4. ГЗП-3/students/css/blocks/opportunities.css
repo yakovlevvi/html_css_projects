@@ -1,0 +1,16 @@
+.opportunities {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.opportunities__item {
+    width: calc(50% - 16px);
+}
+
+.opportunities__item--row {
+    width: calc(25% - 24px);
+}

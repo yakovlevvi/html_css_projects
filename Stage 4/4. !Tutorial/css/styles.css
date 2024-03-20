@@ -1,0 +1,6 @@
+@import "global/fonts.css";
+@import "global/reboot.css";
+
+@import "blocks/page-content.css";
+@import "blocks/product-card.css";
+@import "blocks/products.css";

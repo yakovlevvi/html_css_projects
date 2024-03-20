@@ -1,0 +1,74 @@
+.footer {
+    background-color: #23252E;
+    padding: 40px 0 28px;
+}
+
+.footer__wrapper {
+    display: grid;
+    gap: 47px;
+}
+
+.footer__heading {
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    align-items: start;
+    row-gap: 16px;
+    font-family: "Foros", "Arial", sans-serif;
+}
+
+.footer__contacts {
+    display: grid;
+    gap: 56px;
+    justify-content: flex-end;
+}
+
+.footer__tel {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.footer__mail {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.footer__social-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 72px;
+    flex-wrap: wrap;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__bottom {
+    display: grid;
+    gap: 28px;
+    justify-content: center;
+    font-family: "Foros", "Arial", sans-serif;
+}
+
+.footer__info {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    opacity: 40%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    margin: 0 auto;
+}

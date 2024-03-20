@@ -1,0 +1,73 @@
+.advice-card {
+    background: linear-gradient(90deg, #415BD2 0%, #8DA1F7 100%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 32px;
+    min-height: 480px;
+    height: 100%;
+    color: #fff;
+}
+
+.advice-card--benefits {
+    background: url("../../images/1bg.jpg");
+}
+
+.advice-card--high-rating {
+    background-image: url("../../images/2bg.jpg");
+}
+
+.advice-card--gold-bars {
+    background-image: url("../../images/3bg.jpg");
+}
+
+.advice-card--apartment {
+    background-image: url("../../images/4bg.jpg");
+}
+
+.advice-card--sbp {
+    background-image: url("../../images/5bg.jpg");
+}
+
+.advice-card--firing {
+    background-image: url("../../images/6bg.jpg");
+}
+
+.advice-card--balance {
+    background-image: url("../../images/7bg.jpg");
+}
+
+.advice-card--credit-load {
+    background-image: url("../../images/8bg.jpg");
+}
+
+.advice-card__heading {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0;
+}
+
+.advice-card__label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.advice-card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: auto 0 20px;
+}
+
+.advice-card__link {
+    display: block;
+    background-color: #476BF0;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 14px; 
+}

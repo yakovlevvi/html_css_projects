@@ -1,0 +1,22 @@
+.btn {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background-color: #2B3143;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn--size-xl {
+    padding: 12px;
+    min-width: 144px;
+}

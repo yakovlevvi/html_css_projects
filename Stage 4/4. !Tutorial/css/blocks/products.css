@@ -1,0 +1,21 @@
+.products {
+    margin: 0 0 70px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 70px 30px;
+    flex-wrap: wrap;   
+}
+
+.products--flat {
+    gap: 70px;
+
+}
+
+.products__item {
+    width: calc(33.33% - 20px);
+}
+
+.products--flat .products__item {
+    width: 100%;
+}

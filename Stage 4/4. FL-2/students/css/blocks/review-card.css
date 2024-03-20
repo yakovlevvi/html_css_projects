@@ -1,0 +1,93 @@
+.review-card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 2px solid #26AA9A;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.review-card__profile-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.review-card__profile-img {
+    border-radius: 50%;
+    height: 70px;
+    box-shadow: 2px 2px 20px 0px #26AA9A66;
+    margin: 0;
+}
+
+.review-card__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-card__profile-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.review-card__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 50%;
+    margin: 0;
+}
+
+.review-card__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 0 39px;
+}
+
+.review-card__product {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: auto 0 15px;
+}
+
+.review-card__product-type {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 50%;
+    margin: 0;
+}
+
+.review-card__product-model {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 50%;
+    margin: 0;
+}
+
+.review-card__link {
+    display: block;
+    background-color: #26AA9A;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2023;
+    text-align: center;
+}
+
+.review-card__link--secondary {
+    background: transparent;
+    border: 2px solid #26AA9A;
+    color: inherit;
+}
+
+

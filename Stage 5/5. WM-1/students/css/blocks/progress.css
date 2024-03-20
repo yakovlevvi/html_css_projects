@@ -1,0 +1,91 @@
+.progress__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 441px;
+}
+
+.progress__gallery-list {
+    margin: 0;
+    padding: 40px 40px 40px 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+}
+
+.progress__gallery-item--flat {
+    grid-column: span 2;
+}
+
+.progress__gallery-item--tall {
+    grid-row: span 2;
+}
+
+.progress__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0 40px 100px;
+    border-left: 1px solid #053947
+}
+
+.progress__nav-btn {
+    margin: 0 auto;
+}
+
+.progress__info-title {
+    font-family: "Fira Sans Extra Condensed";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.progress__info-list {
+    max-width: 340px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 15px
+}
+
+.progress__info-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.progress__paginator {
+    display: flex;
+    gap: 40px;
+    margin: auto 0 0;
+}
+
+.progress__page-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #B68E6C;
+}
+
+.progress__page-btn svg {
+    width: 40px;
+}
+
+.progress__page-btn--left .progress__page-text {
+    text-align: right;
+}
+
+.progress__page-btn--right .progress__page-text {
+    text-align: left;
+}
+
+.progress__page-text {
+    max-width: 100px;
+}

@@ -1,0 +1,84 @@
+.team-card {
+    background-color: #F2F3EE;
+    border-radius: 20px;
+    margin: 0;
+    padding: 30px;
+    height: 100%;  /* TBA */
+}
+
+.team-card__post {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 5px;
+}
+
+.team-card__name {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 20px;
+}
+
+.team-card__content {
+    display: flex;
+    gap: 30px;
+}
+
+.team-card__img {
+    border-radius: 12px;
+}
+
+.team-card__text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card__quote {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 20px;
+}
+
+.team-card__quote--center {
+    text-align: center;
+}
+
+.team-card__status {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    margin: 0 0 48px;
+    max-width: 270px;
+}
+
+.team-card__status--center {
+    text-align: center;
+    margin: 0 auto 48px;
+}
+
+.team-card__links {
+    display: flex;
+    gap: 10px;
+    margin: auto 0 0;
+}
+
+.team-card__link {
+    display: block;
+    background-color: #D6D2C4;
+    border-radius: 40px;
+    padding: 7px;
+    width: 50%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.team-card__link--secondary {
+    background-color: transparent;
+}

@@ -1,0 +1,19 @@
+.site-card__img {
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    margin: 0 0 20px;
+}
+
+.site-card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 8px;
+}
+
+.site-card__description {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    color: #696E82;
+}

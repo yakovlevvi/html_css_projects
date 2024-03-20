@@ -1,0 +1,49 @@
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 215px;
+    gap: 61px 20px;
+    margin: 0 0 80px;
+    align-items: start;
+}
+
+.gallery__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 41px 20px;
+    grid-template-columns: 365px 115px auto 240px;
+    grid-template-rows: 300px 240px 159px 100px 350px;
+}
+
+.gallery__item--flat {
+    grid-column: span 2;
+}
+
+.gallery__item--extra-flat {
+    grid-column: span 3;
+}
+
+.gallery__item--tall {
+    grid-row: span 2;
+}
+
+.gallery__card {
+    margin: 0;
+    height: 100%;
+}
+
+.gallery__img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 5px;
+}
+
+.gallery__caption {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 50%;
+    text-align: right;
+}

@@ -1,0 +1,33 @@
+.tourist-memo__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 20px;
+}
+
+.tourist-memo__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 20px;
+}
+
+.tourist-memo__risk-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 10px;
+}
+
+.tourist-memo__risk-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 17px;
+}
+
+.tourist-memo__risk-item {
+    font-size: 16px;
+    line-height: 20px;
+}
