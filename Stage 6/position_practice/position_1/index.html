@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Практика позиционирования. Кейс 1.</title>
+</head>
+
+<body>
+    <form class="form-login" action="#" method="post">
+        <div class="form-login__inner">
+            <div class="custom-input">
+                <label class="custom-input__label visually-hidden" for="user-email">Имя</label>
+                <input class="custom-input__field" id="user-email" type="email" name="user-email" placeholder="Введите логин" required>
+                <span class="custom-input__icon custom-input__icon--user">
+                    <svg class="custom-input__svg" width="24" height="18" aria-hidden="true">
+                        <use xlink:href="img/sprite/sprite.svg#user-icon"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="custom-input">
+                <label class="custom-input__label visually-hidden" for="user-password">Пароль</label>
+                <input class="custom-input__field" id="user-password" type="password" name="user-password" placeholder="Введите пароль" required>
+                <button class="custom-input__icon custom-input__icon--password" type="button">
+                    <svg class="custom-input__svg" width="24" height="24" aria-hidden="true">
+                        <use xlink:href="img/sprite/sprite.svg#password-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+      <button class="form-login__btn" type="submit">Войти</button>
+    </form>
+</body>
+
+</html>

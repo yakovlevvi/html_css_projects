@@ -1,0 +1,13 @@
+.custom-toggle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input[type="checkbox"] + label {
+  color: #ff0000;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #0000ff;
+}

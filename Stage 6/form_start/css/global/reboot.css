@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo-2", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #242424;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(153deg, #D2CCC4 -0.31%, #2F4353 99.69%);
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+a {
+  color: #242424;
+  text-decoration: none;
+}

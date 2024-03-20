@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <title>Страница с регистрацией</title>
+</head>
+
+<body>
+<main>
+  <section class="registration">
+    <h1 class="visually-hidden">Страница с регистрацией</h1>
+    <div class="container">
+      <form class="form" action="#" method="POST">
+        <h2 class="form__title">Заполните форму регистрации</h2>
+        <p class="form__info">Все поля обязательны к заполнению</p>
+        <p class="form__info">Перед отправкой проверьте данные</p>
+        <div class="custom-input">
+          <label class="custom-input__label" for="name">Имя:</label>
+          <input class="custom-input__field" type="text" 
+          id="name"  name="name" placeholder="Ваше имя">
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__label" for="email">Электронная почта:</label>
+          <input class="custom-input__field" type="email" 
+          id="email" name="email" placeholder="Ваша почта">
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__label" for="password">Пароль:</label>
+          <input class="custom-input__field" type="password" id="password" 
+          name="password" placeholder="Пароль">
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__label" for="password-repeat">Повторите пароль:</label>
+          <input class="custom-input__field" type="password" id="password-repeat" 
+          name="password-repeat" placeholder="Повторите пароль">
+        </div>
+        <div class="custom-toggle">
+          <input class="custom-toggle__field" type="checkbox" id="remember" name="remember">
+          <label class="custom-toggle__label" for="remember">Запомнить пароль?</label>
+        </div>
+        <button class="form__button" type="submit" disabled>Зарегистрироваться</button>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>

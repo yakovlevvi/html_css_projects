@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Погружение в формы</title>
+</head>
+
+<body>
+<main>
+  <section class="order">
+    <h1 class="visually-hidden">Форма отправки заявки</h1>
+    <div class="container">
+      <form class="order-form" action="#" method="POST">
+        <h2 class="order-form__title">Оставить заявку</h2>
+        <p class="order-form__text">Мы свяжемся с вами и подберём удобное время для консультации</p>
+        <fieldset class="order-form__group order-form__group--size-s">
+          <legend class="order-form__group-name">Информация о пользователе</legend>
+          <div class="order-form__wrapper">
+            <div class="custom-input custom-input--invalid">
+              <label class="custom-input__label" for="user-name">Имя</label>
+              <input class="custom-input__field" id="user-name" type="text" name="name" placeholder="Введите свое имя" required>
+              <span class="custom-input__error">Поле должно быть заполнено</span>
+            </div>
+            <div class="custom-input">
+              <label class="custom-input__label" for="user-second-name">Отчество</label>
+              <input class="custom-input__field" id="user-second-name" type="text" name="name" placeholder="Введите свое отчество">
+            </div>
+            <div class="custom-input custom-input--invalid">
+              <label class="custom-input__label" for="user-surname">Фамилия</label>
+              <input class="custom-input__field" id="user-surname" type="text" name="name" placeholder="Введите свою фамилию" required>
+              <span class="custom-input__error">Поле должно быть заполнено</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__group-name">Дополнительная информация</legend>
+          <div class="order-form__wrapper order-form__wrapper--col-2">
+            <div class="custom-input">
+              <label class="custom-input__label" for="user-phone">Телефон</label>
+              <input class="custom-input__field" id="user-phone" type="tel" name="phone" placeholder="+79999999999">
+              
+            </div>
+            <div class="custom-input">
+              <label class="custom-input__label" for="user-mail">Почта</label>
+              <input class="custom-input__field" id="user-mail" type="email" name="surname" placeholder="mail@mail.ru">
+            </div>
+
+            <div class="custom-textarea custom-textarea--size-2">
+              <label class="custom-textarea__label" for="comment">Комментарий</label>
+              <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+            </div>
+
+          </div>
+        </fieldset>
+        <div class="custom-toggle">
+          <input class="custom-toggle__field visually-hidden" id="agree-agreement" type="checkbox" name="accept">
+          <label class="custom-toggle__label" for="agree-agreement">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+              <path d="M17 1L6 12L1 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="custom-toggle__text">Согласен с правилами сайта</span>
+          </label>
+        </div>
+        <div class="order-form__buttons">
+          <button class="btn" type="submit" disabled>Отправить заявку</button>
+          <button class="btn" type="reset">Сбросить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>

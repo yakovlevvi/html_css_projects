@@ -1,0 +1,42 @@
+.custom-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.custom-toggle__field:checked + .custom-toggle__label svg {
+  opacity: 1;
+}
+
+.custom-toggle__label {
+  padding: 0 0 0 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-toggle__label svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  opacity: 0;
+}
+
+.custom-toggle__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  background-color: #FDF0ED;
+  border-radius: 8px;
+}
+
+.custom-toggle__text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  user-select: none;
+}
