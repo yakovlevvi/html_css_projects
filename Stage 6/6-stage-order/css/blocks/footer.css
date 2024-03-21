@@ -38,6 +38,15 @@
   display: flex;
 }
 
+.footer__nav-link:hover {
+  color: rgba(71, 80, 9, 0.7);
+}
+
+.footer__nav-link:focus-visible {
+  outline: 1px solid rgba(71, 80, 9, 0.7);
+  outline-offset: 2px;
+}
+
 .footer__right {
   display: flex;
   flex-direction: column;
@@ -60,6 +69,15 @@
   text-decoration: underline;
   font-size: 14px;
   line-height: 20px;
+}
+
+.footer__contact-link:hover {
+  color: rgba(71, 80, 9, 0.7);
+}
+
+.footer__contact-link:focus-visible {
+  outline: 1px solid rgba(71, 80, 9, 0.7);
+  outline-offset: 2px;
 }
 
 .footer__copyright {

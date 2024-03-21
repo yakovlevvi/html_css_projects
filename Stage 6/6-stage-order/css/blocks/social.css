@@ -16,3 +16,12 @@
   width: 32px;
   border-radius: 50%;
 }
+
+.social__link:hover {
+  background-color: rgba(71, 80, 9, 0.7);
+}
+
+.social__link:focus-visible {
+  background-color: #502198;
+  outline: none;
+}

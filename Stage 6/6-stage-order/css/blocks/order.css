@@ -1,6 +1,7 @@
 .order__wrapper {
   display: grid;
   grid-template-columns: 630px 590px;
+  align-items: start;
 }
 
 .order__left-col {
@@ -10,6 +11,8 @@
 
 .order__right-col {
   padding: 50px 0 20px 30px;
+  position: sticky;
+  top: 182px;
 }
 
 .order__title {
