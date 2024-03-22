@@ -1,0 +1,58 @@
+.request-form__group {
+	border: none;
+	padding: 0;
+	margin: 0 0 40px;
+}
+
+.request-form__group-name {
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 1.16;
+	margin: 0 0 60px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	grid-column: span 2;
+}
+
+.request-form__group-name--compact {
+	margin: 0 0 28px;
+}
+
+.request-form__group-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ACB5BD;
+}
+
+.request-form__wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 60px 80px;
+}
+
+.request-form__col {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.request-form__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.request-form__wrapper--flat {
+	gap: 28px;
+}
+
+.request-form__comment {
+	margin: 0 0 60px;
+}
+
+.request-form__agree {
+	margin: 0 0 80px;
+}
