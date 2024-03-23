@@ -1,0 +1,26 @@
+.btn {
+	background-color: #476BF0;
+	border: none;
+	border-radius: 60px;
+	padding: 14px;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #3356D7;
+}
+
+.btn:focus-visible {
+	background-color: #2143C1;
+	outline: none;
+}
+
+.btn:disabled {
+	background-color: #DBDFEB;
+	color: #777C9B;
+	pointer-events: none;
+}

@@ -1,0 +1,15 @@
+.registration {
+	padding: 0 102px 0 252px;
+}
+
+.registration__wrapper {
+	display: grid;
+	grid-template-columns: 450px auto;
+	align-items: center;
+	gap: 32px 80px;
+	margin: 0 auto;
+}
+
+.registration__info {
+	max-width: 500px;
+}

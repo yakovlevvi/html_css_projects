@@ -1,0 +1,141 @@
+.form {
+	width: 450px;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0px 2px 24px 0px #7F225505;
+	margin: 0 auto;
+	position: relative;
+}
+
+.form--mb {
+	margin-bottom: 32px;
+}
+
+.form__wrapper {
+	margin: 0;
+	padding: 32px;
+}
+
+.form__title {
+	display: block;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	color: #1E222E;
+	margin: 0 0 28px;
+	text-align: center;
+}
+
+.form__title--mb {
+	margin: 0 0 32px;
+}
+
+.form__input-wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 18px 10px;
+	margin: 0 0 24px;
+}
+
+.form__btn {
+	margin: 0 0 24px;
+}
+
+.form__group {
+	border: none;
+	margin: 0;
+	padding: 0;
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8px 10px;
+}
+
+.form__group-name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-column: span 2;
+}
+
+.form__group-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #8F939F;
+}
+
+.form__reload-btn {
+	border: none;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #8F939F;
+	cursor: pointer;
+}
+
+.form__login-wrap {
+	background: linear-gradient(90deg, #F5F6FA 0%, #F7F1F7 51.5%, #F5F7FD 100%);
+	padding: 24px;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+	margin: auto 0 0;
+	border-radius: 0 0 20px 20px;
+}
+
+.form__login-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #7E7D87;
+}
+
+.form__login-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #7E7D87;
+}
+
+.form__check-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 28px 32px;
+	border: 1px solid #CDCFDE80;
+	border-radius: 12px;
+	margin: 0 0 28px;
+}
+
+.form__link-back {
+	width: 48px;
+	height: 48px;
+	border: none;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 20px 0px #101A3B1A;
+
+	position: absolute;
+	left: 0;
+	transform: translateX(-50%);
+	top: 22px;
+	color: #1E222E;
+}
+
+.form__link-back:hover,
+.form__link-back:focus-visible {
+	color: #476BF0;
+	outline: none;
+}
+
+.form__link-back:disabled {
+	background-color: #DBDFEB;
+	color: #777C9B;
+	pointer-events: none;
+}

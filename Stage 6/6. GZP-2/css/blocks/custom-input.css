@@ -1,0 +1,125 @@
+.custom-input {
+	width: 100%;
+	grid-column: span 2;
+
+	position: relative;
+}
+
+.custom-input--narrow {
+	grid-column: initial;
+}
+
+.custom-input--captcha {
+	pointer-events: none;
+}
+
+.custom-input--error .custom-input__field{
+	background-color: #FFFBFB;
+	border: 1px solid #F9C4C2
+}
+
+.custom-input--error .custom-input__error {
+	display: block;
+}
+
+
+.custom-input__field {
+	border: 1px solid #CDCFDE;
+	border-radius: 8px;
+	
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 16px;
+	color: #1E222E;
+	
+	padding: 14px 16px;
+	width: 100%;
+}
+
+.custom-input__field:hover,
+.custom-input__field:focus-visible {
+	border-color: #3356D7;
+	outline: none;
+}
+
+.custom-input__field:hover ~ .custom-input__icon,
+.custom-input__field:hover ~ .custom-input__button,
+.custom-input__field:focus-visible ~ .custom-input__icon,
+.custom-input__field:focus-visible ~ .custom-input__button {
+	color: #3356D7;
+}
+
+.custom-input--icon .custom-input__field {
+	padding-right: 44px;
+}
+
+.custom-input__field::placeholder {
+	color: #8F939F ;
+}
+
+.custom-input--error .custom-input__icon,
+.custom-input--error .custom-input__button {
+	color: #F9C4C2;
+	top: 35%;
+}
+.custom-input__label {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #8F939F;
+	position: absolute;
+	left: 12px;
+	top: 0;
+	transform: translateY(-50%);
+	background-color: #fff;
+	padding: 1px 4px;
+	user-select: none;
+}
+
+.custom-input__icon {
+	color: #8F939F;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+.custom-input__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	color: #8F939F;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.custom-input__button:hover,
+.custom-input__button:focus-visible {
+	color: #3356D7;
+	outline: none;
+}
+
+.custom-input__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.custom-input__error {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #F6514B;
+	display: none;
+	padding-top: 8px;
+}

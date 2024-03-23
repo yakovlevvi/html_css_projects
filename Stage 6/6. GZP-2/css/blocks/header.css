@@ -1,0 +1,46 @@
+.header {
+	padding: 20px 0 14px;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 100px;
+	align-items: center;
+}
+
+.header__info {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 4px;
+	align-items: center;
+}
+
+.header__info-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.header__heading {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #777B87;
+	text-align: right;
+}
+
+.header__text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #A8ACB7;
+	text-align: right;
+}
+
+.header__link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

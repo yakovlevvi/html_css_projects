@@ -7,3 +7,18 @@
 
 /* Blocks */
 /* ------------------------------------ */
+@import "blocks/btn.css";
+@import "blocks/link.css";
+@import "blocks/header.css";
+@import "blocks/footer.css";
+@import "blocks/form-section.css";
+@import "blocks/login.css";
+@import "blocks/form-wrapper.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-radio.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/form.css";
+@import "blocks/forgot-form.css";
+@import "blocks/forgot-data.css";
+@import "blocks/registration.css";
+@import "blocks/info-block.css";
