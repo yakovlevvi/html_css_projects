@@ -1,0 +1,51 @@
+.custom-radio--error .custom-radio__label::before {
+	border-color: #d72522;
+}
+
+.custom-radio__field:hover + .custom-radio__label::before,
+.custom-radio__field:focus-visible + .custom-radio__label::before {
+	border-color: #1883b6;
+}
+
+.custom-radio__field:checked + .custom-radio__label::before {
+	background-color: #259dd6;
+}
+
+.custom-radio__field:checked + .custom-radio__label .custom-radio__icon {
+	display: block;
+}
+
+.custom-radio__label {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #343033;
+	padding: 0 0 0 36px;
+	cursor: pointer;
+
+	position: relative;
+	user-select: none;
+}
+
+.custom-radio__label::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	border: 2px solid #259dd6;
+
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.custom-radio__icon {
+	color: #fff;
+
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+}

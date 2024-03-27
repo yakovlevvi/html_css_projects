@@ -1,0 +1,125 @@
+.tariff-card {
+	background-color: #fff;
+	border: 1px solid #e2e4e8;
+	border-radius: 28px;
+	padding: 38px 31px 24px;
+
+	position: relative;
+}
+
+.tariff-card__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.2;
+	margin: 0 0 29px;
+}
+
+.tariff-card__list {
+	display: grid;
+	grid-template-columns: 1fr 105px 1fr;
+	margin: 0 0 21px;
+	list-style-type: none;
+	padding: 0;
+}
+
+.tariff-card__item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+	position: relative;
+}
+
+.tariff-card__item:first-child {
+	padding-right: 21px;
+}
+
+.tariff-card__item:last-child {
+	padding-left: 19px;
+}
+
+.tariff-card__item:not(:last-child)::after {
+	content: '';
+	width: 2px;
+	height: 34px;
+	position: absolute;
+	background-color: #999899;
+	right: 0;
+	top: 4px;
+}
+
+.tariff-card__text-num {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+.tariff-card__text {
+	font-size: 14px;
+	line-height: 1.3;
+	font-weight: 400;
+}
+
+.tariff-card__benefit-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	list-style-type: none;
+	margin: 0 0 12px;
+	padding: 0;
+	max-width: 204px;
+}
+
+.tariff-card__benefit-item {
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	gap: 8px;
+	align-items: center;
+}
+
+.tariff-card__benefit-icon {
+	background-color: #f3f4f7;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	color: #259dd6;
+}
+
+.tariff-card__benefit-icon--purple {
+	color: #9548bd;
+}
+
+.tariff-card__benefit-icon--pink {
+	color: #d713ad;
+}
+
+.tariff-card__link {
+	margin: 0 0 28px;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	font-size: 14px;
+	line-height: 1.15;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.tariff-card__top-label {
+	background: linear-gradient(90deg, #537ccb 0%, #9648bd 100%);
+	border-radius: 60px;
+	padding: 6px;
+	min-width: 109px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.15;
+	letter-spacing: -0.02em;
+
+	position: absolute;
+	top: 38px;
+	right: 47px;
+}

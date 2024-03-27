@@ -1,0 +1,33 @@
+.order-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px 17px;
+	margin: 0;
+
+	position: relative;
+}
+
+.order-form__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #858385;
+	display: block;
+	margin: 0 0 20px;
+}
+
+.order-form__radio-wrap {
+	display: flex;
+	gap: 28px;
+}
+
+.order-form__check-wrap {
+	grid-column: span 2;
+	max-width: 450px;
+}
+
+.order-form__btn {
+	position: absolute;
+	bottom: 28px;
+	right: 4px;
+}

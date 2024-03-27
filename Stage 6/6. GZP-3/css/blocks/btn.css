@@ -1,0 +1,66 @@
+.btn {
+	border: none;
+	background-color: #239dd6;
+	padding: 12px;
+	min-width: 131px;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.15;
+	margin: 0;
+	border-radius: 60px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:hover {
+	background-color: #9d1881;
+}
+
+.btn:focus-visible {
+	background-color: #771061;
+	outline: none;
+}
+
+.btn:disabled {
+	background-color: #f0f0f0;
+	color: #858385;
+	pointer-events: none;
+}
+
+.btn--large {
+	background: linear-gradient(270deg, #537ccb 0%, #13aed7 100%);
+	border-radius: 16px;
+	padding: 18px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -0.02em;
+	width: 100%;
+}
+
+.btn--large:hover,
+.btn--large:focus-visible {
+	background: #537ccb;
+	outline: none;
+}
+
+.btn--purple {
+	background: linear-gradient(270deg, #9548bd 0%, #547ccb 100%);
+}
+
+.btn--purple:hover,
+.btn--purple:focus-visible {
+	background: #9548bd;
+	outline: none;
+}
+
+.btn--pink {
+	background: linear-gradient(270deg, #d812ae 0%, #9548bd 100%);
+}
+
+.btn--pink:hover,
+.btn--pink:focus-visible {
+	background: #d812ae;
+	outline: none;
+}

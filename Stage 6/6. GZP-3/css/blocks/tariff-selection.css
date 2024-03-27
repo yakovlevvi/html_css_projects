@@ -1,0 +1,27 @@
+.tariff-selection {
+	padding: 44px 0 0;
+	margin: 0 0 100px;
+}
+
+.tariff-selection__title--accent {
+	color: #259dd6;
+}
+
+.tariff-selection__title {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	margin: 0 0 56px;
+	text-align: center;
+}
+
+.tariff-selection__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}

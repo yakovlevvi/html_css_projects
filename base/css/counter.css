@@ -1,0 +1,16 @@
+.test__list {
+	list-style-type: none;
+	counter-reset: counter;
+}
+
+.test__item {
+	counter-increment: counter;
+
+	position: relative;
+}
+
+.test__item::before {
+	content: counter(counter);
+
+	position: absolute;
+}
