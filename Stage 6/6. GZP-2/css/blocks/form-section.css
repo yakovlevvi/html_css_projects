@@ -1,6 +1,19 @@
 .form-section {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	min-height: calc(100vh - 178px);
+}
+
+.form-section__wrapper {
+	display: grid;
+	grid-template-columns: 450px auto;
+	align-items: center;
+	gap: 32px 80px;
+	margin: 0 auto;
+	padding: 0 102px 0 252px;
+}
+
+
+.form-section__info {
+	max-width: 500px;
 }
