@@ -1,0 +1,10 @@
+.title {
+	font-family: 'Press Start 2P', 'Arial', sans-serif;
+	color: #87f29a;
+	font-weight: 400;
+	text-align: center;
+}
+
+.title--white {
+	color: #ffffff;
+}

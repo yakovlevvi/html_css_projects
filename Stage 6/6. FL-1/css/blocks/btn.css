@@ -1,0 +1,14 @@
+.btn {
+	border: none;
+	background-color: #87f29a;
+	border-radius: 8px;
+	padding: 12px 32px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+
+	cursor: pointer;
+	user-select: none;
+}

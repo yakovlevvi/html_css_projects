@@ -1,0 +1,82 @@
+.message {
+	padding: 32px 40px;
+	border-radius: 40px;
+	position: relative;
+}
+
+.message--swamp {
+	background-color: #676a47;
+	color: #676a47;
+	max-width: 363px;
+}
+
+.message--blue {
+	background-color: #243961;
+	max-width: 334px;
+}
+
+.message--purple {
+	background-color: #61235f;
+	color: #61235f;
+	max-width: 297px;
+}
+
+.message--brown {
+	background-color: #62432c;
+	color: #62432c;
+	max-width: 303px;
+}
+
+.message--green {
+	background-color: #315c51;
+	color: #315c51;
+	max-width: 283px;
+}
+
+.message--dark-purple {
+	background-color: #432858;
+	color: #432858;
+	max-width: 423px;
+}
+
+.message--red {
+	background-color: #6a2844;
+	color: #6a2844;
+	max-width: 363px;
+}
+
+.message__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.7);
+	margin: 0;
+	padding: 0;
+}
+
+.message__callout-icon {
+	color: inherit;
+
+	position: absolute;
+	right: 0;
+	transform: translateX(50%);
+	bottom: 0;
+}
+
+.message--left .message__callout-icon {
+	left: 0;
+	transform: translateX(-50%) scaleX(-1);
+}
+
+.message__img {
+	position: absolute;
+	top: -43px;
+	left: -110px;
+	z-index: -1;
+}
+
+.message--smile-r .message__img {
+	top: -45px;
+	left: auto;
+	right: -114px;
+}
