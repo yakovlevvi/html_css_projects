@@ -1,0 +1,97 @@
+.package-card {
+	border: 3px solid #0000001a;
+	border-radius: 40px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 246px 30px 30px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.package-card--active {
+	background-color: #121c25;
+	border-color: rgba(0, 0, 0, 0.1);
+	color: #ffffff;
+}
+
+.package-card--think {
+	background-image: url('../../images/smile-think.png');
+}
+
+.package-card--wow {
+	background-image: url('../../images/smile-wow.png');
+}
+
+.package-card--angry {
+	background-image: url('../../images/smile-angry.png');
+}
+
+.package-card__title {
+	font-family: 'Press Start 2P', 'Arial', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 28px;
+	margin: 0 0 12px;
+}
+
+.package-card--think .package-card__title--accent {
+	color: #afa3ff;
+}
+
+.package-card--wow .package-card__title--accent {
+	color: #87f29a;
+}
+
+.package-card--angry .package-card__title--accent {
+	color: #fe8900;
+}
+
+.package-card__description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	opacity: 0.6;
+	margin: 0 0 24px;
+}
+
+.package-card__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0 0 83px;
+}
+
+.package-card__benefit-text {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.package-card__num {
+	border-radius: 12px;
+	padding: 2px 8px;
+	font-weight: 700;
+	color: #000;
+}
+
+.package-card__link {
+	margin: auto 0 0;
+}
+
+.package-card--active.package-card--think .package-card__link,
+.package-card--think .package-card__num {
+    background-color: #afa3ff;
+}
+
+.package-card--active.package-card--wow .package-card__link,
+.package-card--wow .package-card__num {
+    background-color: #87f29a;
+}
+
+.package-card--active.package-card--angry .package-card__link,
+.package-card--angry .package-card__num {
+	background-color: #ffc61f;
+}

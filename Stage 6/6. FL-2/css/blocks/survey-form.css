@@ -1,0 +1,132 @@
+.survey-form__list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	margin: 0;
+	padding: 0;
+
+	counter-reset: counter;
+}
+
+.survey-form__item {
+	counter-increment: counter;
+
+	position: relative;
+}
+
+.survey-form__item--light {
+	background-color: #fff;
+	padding: 99px 0 80px;
+	color: #000000;
+	margin: 0 0 17px;
+}
+
+
+.survey-form__item::before {
+	content: counter(counter);
+	position: absolute;
+	top: 0;
+	left: 120px;
+	transform: translateY(-30%);
+	
+	font-family: 'Press Start 2P', 'Arial', sans-serif;
+	font-size: 22px;
+	line-height: 36px;
+	text-align: center;
+	color: #000;
+	
+	background-color: #87F29A;
+	border-radius: 50%;
+	padding: 12px 19px;
+	
+}
+
+.survey-form__item--light::before {
+	top: 99px;
+	color: #87F29A;
+	background-color: #121C25;
+}
+
+.survey-form__step-name {
+	font-family: 'Press Start 2P', 'Arial', sans-serif;
+	font-size: 24px;
+	line-height: 1;
+	padding-left: 84px;
+	color: #fff;
+
+	margin: 0 0 50px;
+}
+
+.survey-form__item--light .survey-form__step-name {
+	color: #000;
+}
+
+.survey-form__wrap {
+	display: grid;
+	grid-template-columns: 500px 1fr 500px;
+	gap: 28px 24px;
+}
+
+.survey-form__block {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 24px;
+	padding: 40px 64px;
+}
+
+.survey-form__block--flat {
+	grid-column: span 2;
+}
+
+.survey-form__question {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 32px;
+	color: #fff;
+	margin: 0 0 8px;
+}
+
+.survey-form__icon {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.survey-form__card-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 27px;
+}
+
+.survey-form__delivery-wrap {
+	display: grid;
+	grid-template-columns: 1fr 286px;
+	gap: 40px;
+}
+
+.survey-form__input-wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
+
+.survey-form__btn {
+	font-family: 'Press Start 2P', 'Arial', sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.survey-form__btn:hover,
+.survey-form__btn:focus-visible {
+	background-color: #78DF8A;
+	border: none;
+	outline: none;
+}
