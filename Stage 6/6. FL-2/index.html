@@ -51,12 +51,12 @@
     <section class="survey">
       <h1 class="visually-hidden">Опрос БЕСIT</h1>
       <form class="survey-form" action="#" method="POST">
-        <ol class="survey-form__list">
-          <li class="survey-form__item">
+        <div class="survey-form__wrap">
+          <div class="survey-form__block ">
             <div class="container">
-              <p class="survey-form__step-name">Ответь на&nbsp;простые вопросы</p>
-              <div class="survey-form__wrap">
-                <div class="survey-form__block survey-form__block--flat">
+              <p class="survey-form__step-name"><span class="survey-form__step">1</span> Ответь на&nbsp;простые вопросы</p>
+              <ul class="survey-form__list">
+                <li class="survey-form__item survey-form__item--flat">
                   <p class="survey-form__question">Когда по&nbsp;вашей задаче наступает дедлайн, а&nbsp;у&nbsp;вас
                     ничего не&nbsp;готово. Вы..</p>
                   <div class="custom-checkbox">
@@ -92,8 +92,8 @@
                       <use xlink:href="images/sprite.svg#icon-check"></use>
                     </svg>
                   </div>
-                </div>
-                <div class="survey-form__block">
+                </li>
+                <li class="survey-form__item">
                   <p class="survey-form__question">Удается ли вам высыпаться?</p>
                   <div class="custom-radio">
                     <input class="custom-radio__input visually-hidden" type="radio" name="sleep" id="sleep-first"
@@ -115,8 +115,8 @@
                       value="fourth">
                     <label class="custom-radio__label" for="sleep-fourth">Я люблю высыпаться</label>
                   </div>
-                </div>
-                <div class="survey-form__block">
+                </li>
+                <li class="survey-form__item">
                   <p class="survey-form__question">Какой баг вы считаете самым полезным?</p>
                   <div class="custom-radio">
                     <input class="custom-radio__input visually-hidden" type="radio" name="bug" id="bug-first"
@@ -140,8 +140,8 @@
                     <label class="custom-radio__label" for="bug-fourth">Найденный вами, но&nbsp;ненайденный никем
                       больше: раз никто не&nbsp;нашел, значит править не&nbsp;надо</label>
                   </div>
-                </div>
-                <div class="survey-form__block survey-form__block--flat">
+                </li>
+                <li class="survey-form__item survey-form__item--flat">
                   <p class="survey-form__question">Какие &laquo;физические&raquo; упражнения вы&nbsp;предпочитаете?</p>
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" name="physics-first"
@@ -180,16 +180,16 @@
                       <use xlink:href="images/sprite.svg#icon-check"></use>
                     </svg>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li class="survey-form__item survey-form__item--light">
+          </div>
+          <div class="survey-form__block survey-form__block--light">
             <svg class="survey-form__icon" width="72" height="32" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-arrow"></use>
             </svg>
             <div class="container">
-              <p class="survey-form__step-name">Изучи получившийся пакет</p>
+              <p class="survey-form__step-name"><span class="survey-form__step">2</span>Изучи получившийся пакет</p>
               <ul class="survey-form__card-list">
                 <li class="survey-form__card-item">
                   <div class="package-card package-card--think">
@@ -267,10 +267,10 @@
                 </li>
               </ul>
             </div>
-          </li>
-          <li class="survey-form__item">
+          </div>
+          <div class="survey-form__block">
             <div class="container">
-              <p class="survey-form__step-name">Укажи куда доставить</p>
+              <p class="survey-form__step-name"><span class="survey-form__step">3</span>Укажи куда доставить</p>
               <div class="survey-form__delivery-wrap">
                 <div class="survey-form__input-wrap">
                   <div class="custom-input">
@@ -298,8 +298,8 @@
                 <button class="btn btn--sec survey-form__btn" type="submit">Оформить</button>
               </div>
             </div>
-          </li>
-        </ol>
+          </div>
+        </div>
       </form>
     </section>
   </main>
