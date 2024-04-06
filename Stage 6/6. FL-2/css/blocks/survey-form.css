@@ -1,36 +1,38 @@
-.survey-form__wrap {
-	list-style-type: none;
-	display: flex;
-	flex-direction: column;
-	gap: 0;
-	margin: 0;
-	padding: 0;
-
-	counter-reset: counter;
-}
-
 .survey-form__block {
-	counter-increment: counter;
 	position: relative;
-  background-color: #000000;
+  background-color: #000;
 	padding: 100px 0 80px;
+	margin: 0;
 }
 
 .survey-form__block--light {
 	background-color: #fff;
 	color: #000000;
-	margin: 0;
 }
 
 .survey-form__block--top {
-	padding: 0;
+	padding-top: 17px;
 }
 
+.survey-form__step-name {
+	font-family: 'Press Start 2P', 'Arial', sans-serif;
+	font-size: 24px;
+	line-height: 1;
+	padding-left: 84px;
+	color: #fff;
+
+	margin: 0 0 50px;
+	position: relative;
+}
+
+.survey-form__block--light .survey-form__step-name {
+	color: #000;
+}
 
 .survey-form__step {
 	position: absolute;
 	top: 0;
-	left: 120px;
+	left: 0;
 	transform: translateY(-30%);
 	
 	font-family: 'Press Start 2P', 'Arial', sans-serif;
@@ -45,28 +47,9 @@
 	
 }
 
-.survey-form__block--last .survey-form__step {
-	top: 99px;
-}
-
 .survey-form__block--light .survey-form__step {
-	top: 99px;
 	color: #87F29A;
 	background-color: #121C25;
-}
-
-.survey-form__step-name {
-	font-family: 'Press Start 2P', 'Arial', sans-serif;
-	font-size: 24px;
-	line-height: 1;
-	padding-left: 84px;
-	color: #fff;
-
-	margin: 0 0 50px;
-}
-
-.survey-form__block--light .survey-form__step-name {
-	color: #000;
 }
 
 .survey-form__list {

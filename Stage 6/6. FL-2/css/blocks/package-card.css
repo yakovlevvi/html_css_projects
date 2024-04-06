@@ -55,14 +55,15 @@
 	margin: 0 0 24px;
 }
 
-.package-card__inner {
+.package-card__list {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 	margin: 0 0 83px;
+	padding: 0;
 }
 
-.package-card__benefit-text {
+.package-card__item {
 	display: flex;
 	gap: 8px;
 	flex-wrap: wrap;
