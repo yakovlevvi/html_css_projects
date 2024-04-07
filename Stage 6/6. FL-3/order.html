@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Оформление заказа — БЕСIT</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__anim">
+    <span class="header__green"></span>
+    <div class="header__picture">
+      <div class="header__image-big">
+        <img class="header__img" src="images/devil.png" width="320" height="320"
+             alt="Изображение фиолетового монстрика">
+      </div>
+    </div>
+    <div class="header__cubes">
+      <span class="header__cube"></span>
+      <span class="header__cube"></span>
+      <span class="header__cube"></span>
+      <span class="header__cube"></span>
+    </div>
+  </div>
+  <div class="header__wrapper">
+    <div class="container">
+      <div class="header__text">
+        <div class="header__title-wrap">
+          <p class="header__title"><span class="header__title-accent">Бес</span>it</p>
+        </div>
+        <div class="header__desc-wrap">
+          <p class="header__description">Но решение готово</p>
+        </div>
+      </div>
+    </div>
+    <button class="header__burger" aria-label="Переключаетель меню">
+      <svg class="header__burger-icon" width="40" height="40" aria-hidden="true">
+        <use xlink:href="images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<main>
+  <!-- Оформление заказа -->
+  <section class="order">
+    <div class="container">
+      <h1 class="visually-hidden">Оформление заказа</h1>
+      <strong class="order__accent">Оформим заказ</strong>
+      <span class="order__text">Есть люди, которые справляются с&nbsp;этим за&nbsp;2&nbsp;минуты</span>
+      <form class="order-form" action="#" method="POST">
+        <fieldset class="order-form__group">
+          <legend class="order-form__group-name">Контактные данные</legend>
+          <div class="order-form__inner">
+            <div class="order-form__wrap">
+              <div class="custom-input">
+                <input class="custom-input__field" type="text" name="name" id="name">
+                <label class="custom-input__label" for="name">Имя</label>
+              </div>
+              <div class="custom-input custom-input--icon">
+                <input class="custom-input__field" type="tel" name="tel" id="tel" placeholder="+7 000 000-00-00">
+                <label class="custom-input__label" for="tel">Номер телефона</label>
+                <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="news" id="news">
+                <label class="custom-checkbox__label" for="news">
+                  <span class="custom-checkbox__text">Получать новости сервиса</span>
+                  <span class="custom-checkbox__description">Сообщения будут приходить не&nbsp;чаще чем один раз в&nbsp;неделю</span>
+                </label>
+              </div>
+              <div class="custom-input custom-input--icon">
+                <input class="custom-input__field" type="email" name="email" id="email" disabled>
+                <label class="custom-input__label" for="tel">Электронная почта</label>
+                <svg class="custom-input__icon" width="22" height="18" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__group-name">Способ получения заказа</legend>
+          <div class="order-form__inner">
+            <div class="order-form__radio-wrap">
+              <div class="custom-radio">
+                <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-self" value="self">
+                <label class="custom-radio__label" for="get-self">Самовывоз</label>
+              </div>
+              <div class="custom-radio">
+                <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-delivery" value="delivery" checked>
+                <label class="custom-radio__label" for="get-delivery">Доставка</label>
+              </div>
+              <div class="custom-radio">
+                <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-express" value="express">
+                <label class="custom-radio__label" for="get-express">Экспресс-доставка</label>
+              </div>
+            </div>
+            <div class="custom-textarea">
+              <textarea class="custom-textarea__field" name="address" id="address"></textarea>
+              <label class="custom-textarea__label" for="address">Адрес доставки</label>
+            </div>
+            <div class="order-form__wrap">
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="to-friend" id="to-friend">
+                <label class="custom-checkbox__label" for="to-friend">
+                  <span class="custom-checkbox__text">Заказываю другу</span>
+                  <span class="custom-checkbox__description">Друг получит уведомление от&nbsp;нас на&nbsp;свой номер телефона за&nbsp;час до&nbsp;выезда курьера</span>
+                </label>
+              </div>
+              <div class="custom-input custom-input--icon">
+                <input class="custom-input__field" type="tel" name="friend-tel" id="friend-tel" disabled>
+                <label class="custom-input__label" for="friend-tel">Номер телефона друга</label>
+                <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="door" id="door">
+                <label class="custom-checkbox__label" for="door">
+                  <span class="custom-checkbox__text">Оставить у&nbsp;двери</span>
+                  <span class="custom-checkbox__description">Включите эту опцию, если уверены в&nbsp;безопасности оставленного пакета</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__group-name">Способ оплаты</legend>
+          <div class="order-form__inner">
+            <div class="order-form__radio-wrap">
+              <div class="custom-radio">
+                <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-card" value="card" checked>
+                <label class="custom-radio__label" for="pay-card">Картой онлайн</label>
+              </div>
+              <div class="custom-radio">
+                <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-cash" value="cash">
+                <label class="custom-radio__label" for="pay-cash">Наличными</label>
+              </div>
+              <div class="custom-radio">
+                <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-tel" value="tel">
+                <label class="custom-radio__label" for="pay-tel">По&nbsp;телефону</label>
+              </div>
+            </div>
+            <div class="order-form__wrap">
+              <div class="order-form__card-wrap">
+
+              </div>
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="bill" id="bill">
+                <label class="custom-checkbox__label" for="bill">
+                  <span class="custom-checkbox__text">Отправить чек на&nbsp;электронную почту</span>
+                  <span class="custom-checkbox__description">Если хотите всё контролировать ;)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__group-name">Комментарий к&nbsp;заказу</legend>
+          <div class="order-form__inner">
+        
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Подвал мы тоже сверстали, извините 😉 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__inner-info">
+        <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу">
+          <svg class="footer__logo" width="145" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="footer__copyright">
+          <svg class="footer__copyright-icon" width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-copy"></use>
+          </svg>
+          <span class="footer__copyright-text">Все права защищены и&nbsp;принадлежат народу</span>
+        </div>
+      </div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Ссылка на ВК">
+            <svg class="socials__icon" width="19" height="11" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Ссылка на Ютуб">
+            <svg class="socials__icon" width="16" height="12" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Ссылка на ОК">
+            <svg class="socials__icon" width="12" height="19" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Ссылка на Телеграм">
+            <svg class="socials__icon" width="17" height="15" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-tg"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
