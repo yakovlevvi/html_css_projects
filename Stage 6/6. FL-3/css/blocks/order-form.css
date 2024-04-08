@@ -1,0 +1,50 @@
+.order-form {
+	display: grid;
+	grid-template-columns: 1fr 420px;
+	gap: 80px;
+}
+
+.order-form__left-col {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.order-form__group {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.order-form__group-name {
+	font-family: "Press Start 2P", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1;
+	margin: 0 0 40px;
+}
+
+.order-form__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.order-form__wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px 20px;
+}
+
+.order-form__radio-wrap {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.order-form__card-wrap {
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: 1fr repeat(3, 94px);
+	gap: 12px;
+}

@@ -51,121 +51,198 @@
       <strong class="order__accent">Оформим заказ</strong>
       <span class="order__text">Есть люди, которые справляются с&nbsp;этим за&nbsp;2&nbsp;минуты</span>
       <form class="order-form" action="#" method="POST">
-        <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Контактные данные</legend>
-          <div class="order-form__inner">
-            <div class="order-form__wrap">
-              <div class="custom-input">
-                <input class="custom-input__field" type="text" name="name" id="name">
-                <label class="custom-input__label" for="name">Имя</label>
+        <div class="order-form__left-col">
+          <fieldset class="order-form__group">
+            <legend class="order-form__group-name">Контактные данные</legend>
+            <div class="order-form__inner">
+              <div class="order-form__wrap">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="name" id="name">
+                  <label class="custom-input__label" for="name">Имя</label>
+                </div>
+                <div class="custom-input custom-input--icon">
+                  <input class="custom-input__field" type="tel" name="tel" id="tel" placeholder="+7 000 000-00-00">
+                  <label class="custom-input__label" for="tel">Номер телефона</label>
+                  <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="news" id="news">
+                  <label class="custom-checkbox__label" for="news">
+                    <span class="custom-checkbox__text">Получать новости сервиса</span>
+                    <span class="custom-checkbox__description">Сообщения будут приходить не&nbsp;чаще чем один раз в&nbsp;неделю</span>
+                  </label>
+                </div>
+                <div class="custom-input custom-input--icon">
+                  <input class="custom-input__field" type="email" name="email" id="email" disabled>
+                  <label class="custom-input__label" for="email">Электронная почта</label>
+                  <svg class="custom-input__icon" width="22" height="18" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
               </div>
-              <div class="custom-input custom-input--icon">
-                <input class="custom-input__field" type="tel" name="tel" id="tel" placeholder="+7 000 000-00-00">
-                <label class="custom-input__label" for="tel">Номер телефона</label>
-                <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </div>
+          </fieldset>
+          <fieldset class="order-form__group">
+            <legend class="order-form__group-name">Способ получения заказа</legend>
+            <div class="order-form__inner">
+              <div class="order-form__radio-wrap">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-self" value="self">
+                  <label class="custom-radio__label" for="get-self">Самовывоз</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-delivery" value="delivery" checked>
+                  <label class="custom-radio__label" for="get-delivery">Доставка</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-express" value="express">
+                  <label class="custom-radio__label" for="get-express">Экспресс-доставка</label>
+                </div>
+              </div>
+              <div class="custom-textarea">
+                <textarea class="custom-textarea__field" name="address" id="address"></textarea>
+                <label class="custom-textarea__label" for="address">Адрес доставки</label>
+              </div>
+              <div class="order-form__wrap">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="to-friend" id="to-friend">
+                  <label class="custom-checkbox__label" for="to-friend">
+                    <span class="custom-checkbox__text">Заказываю другу</span>
+                    <span class="custom-checkbox__description">Друг получит уведомление от&nbsp;нас на&nbsp;свой номер телефона за&nbsp;час до&nbsp;выезда курьера</span>
+                  </label>
+                </div>
+                <div class="custom-input custom-input--icon">
+                  <input class="custom-input__field" type="tel" name="friend-tel" id="friend-tel" disabled>
+                  <label class="custom-input__label" for="friend-tel">Номер телефона друга</label>
+                  <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="door" id="door">
+                  <label class="custom-checkbox__label" for="door">
+                    <span class="custom-checkbox__text">Оставить у&nbsp;двери</span>
+                    <span class="custom-checkbox__description">Включите эту опцию, если уверены в&nbsp;безопасности оставленного пакета</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="order-form__group">
+            <legend class="order-form__group-name">Способ оплаты</legend>
+            <div class="order-form__inner">
+              <div class="order-form__radio-wrap">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-card" value="card" checked>
+                  <label class="custom-radio__label" for="pay-card">Картой онлайн</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-cash" value="cash">
+                  <label class="custom-radio__label" for="pay-cash">Наличными</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-tel" value="tel">
+                  <label class="custom-radio__label" for="pay-tel">По&nbsp;телефону</label>
+                </div>
+              </div>
+              <div class="order-form__wrap">
+                <div class="order-form__card-wrap">
+                  <div class="custom-input custom-input--icon">
+                    <input class="custom-input__field" type="number" name="card-number" id="card-number" placeholder="0000 0000 0000 0000">
+                    <label class="custom-input__label" for="card-number">Номер карты</label>
+                    <div class="custom-input__icon-wrap">
+                      <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-mc"></use>
+                      </svg>
+                      <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-mir"></use>
+                      </svg>
+                      <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-visa"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="number" name="card-month" id="card-month" placeholder="00">
+                    <label class="custom-input__label" for="card-month">ММ</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="number" name="card-year" id="card-year" placeholder="00">
+                    <label class="custom-input__label" for="card-year">ГГ</label>
+                  </div>
+                  <div class="custom-input">
+                    <input class="custom-input__field" type="number" name="card-cvv" id="card-cvv" placeholder="000">
+                    <label class="custom-input__label" for="card-cvv">CVV</label>
+                  </div>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="bill" id="bill">
+                  <label class="custom-checkbox__label" for="bill">
+                    <span class="custom-checkbox__text">Отправить чек на&nbsp;электронную почту</span>
+                    <span class="custom-checkbox__description">Если хотите всё контролировать ;)</span>
+                  </label>
+                </div>
+                <div class="custom-input custom-input--icon">
+                  <input class="custom-input__field" type="email" name="bill-mail" id="bill-mail" disabled>
+                  <label class="custom-input__label" for="bill-mail">Электронная почта</label>
+                  <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="order-form__group">
+            <legend class="order-form__group-name">Комментарий к&nbsp;заказу</legend>
+            <div class="order-form__inner">
+              <div class="custom-textarea">
+                <textarea class="custom-textarea__field" name="comment" id="comment"></textarea>
+                <label class="custom-textarea__label" for="comment">Ваш комментарий</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="order-form__right-col">
+          <fieldset class="order-form__group">
+            <legend class="order-form__group-name">В&nbsp;вашей корзине</legend>
+            <div class="tariff-card">
+              <a class="tariff-card__link" href="#">
+                <span class="tariff-card__link-text">Состав пакета</span>
+                <svg class="tariff-card__link-icon" width="13" height="13" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-i"></use>
                 </svg>
-              </div>
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="news" id="news">
-                <label class="custom-checkbox__label" for="news">
-                  <span class="custom-checkbox__text">Получать новости сервиса</span>
-                  <span class="custom-checkbox__description">Сообщения будут приходить не&nbsp;чаще чем один раз в&nbsp;неделю</span>
-                </label>
-              </div>
-              <div class="custom-input custom-input--icon">
-                <input class="custom-input__field" type="email" name="email" id="email" disabled>
-                <label class="custom-input__label" for="tel">Электронная почта</label>
-                <svg class="custom-input__icon" width="22" height="18" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-mail"></use>
+              </a>
+              <h2 class="tariff-card__title">Не<span class="tariff-card__title tariff-card__title--accent">БЕС</span>ит Middle</h2>
+              <p class="tariff-card__description">Инициатива не&nbsp;заставит себя ждать, социальная привлекательность возрастет до&nbsp;небес, а&nbsp;задачи наполнятся творчеством</p>
+              <ul class="tariff-card__list">
+                <li class="tariff-card__item">
+                  <span class="tariff-card__num">+150%</span>
+                  <span class="tariff-card__text">к&nbsp;инициативности</span>
+                </li>
+                <li class="tariff-card__item">
+                  <span class="tariff-card__num">+10</span>
+                  <span class="tariff-card__text">уровней социальной привлекательности</span>
+                </li>
+                <li class="tariff-card__item">
+                  <span class="tariff-card__num">+1</span>
+                  <span class="tariff-card__text">посещение творческой музы</span>
+                </li>
+              </ul>
+              <span class="tariff-card__old-price">6&nbsp;666&nbsp;₽</span>
+              <span class="tariff-card__price">5&nbsp;000&nbsp;₽</span>
+              <p class="tariff-card__agree">Нажимая кнопку, вы&nbsp;соглашаетесь с&nbsp;условиями сервиса, и&nbsp;выражаете решимость изменить свою жизнь
+              к&nbsp;лучшему</p>
+              <button class="btn tariff-card__btn" type="submit">
+                <span class="tariff-card__btn-text">Отправить заказ</span>
+                <svg class="tariff-card__btn-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
                 </svg>
-              </div>
+              </button>
             </div>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Способ получения заказа</legend>
-          <div class="order-form__inner">
-            <div class="order-form__radio-wrap">
-              <div class="custom-radio">
-                <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-self" value="self">
-                <label class="custom-radio__label" for="get-self">Самовывоз</label>
-              </div>
-              <div class="custom-radio">
-                <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-delivery" value="delivery" checked>
-                <label class="custom-radio__label" for="get-delivery">Доставка</label>
-              </div>
-              <div class="custom-radio">
-                <input class="custom-radio__field visually-hidden" type="radio" name="get" id="get-express" value="express">
-                <label class="custom-radio__label" for="get-express">Экспресс-доставка</label>
-              </div>
-            </div>
-            <div class="custom-textarea">
-              <textarea class="custom-textarea__field" name="address" id="address"></textarea>
-              <label class="custom-textarea__label" for="address">Адрес доставки</label>
-            </div>
-            <div class="order-form__wrap">
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="to-friend" id="to-friend">
-                <label class="custom-checkbox__label" for="to-friend">
-                  <span class="custom-checkbox__text">Заказываю другу</span>
-                  <span class="custom-checkbox__description">Друг получит уведомление от&nbsp;нас на&nbsp;свой номер телефона за&nbsp;час до&nbsp;выезда курьера</span>
-                </label>
-              </div>
-              <div class="custom-input custom-input--icon">
-                <input class="custom-input__field" type="tel" name="friend-tel" id="friend-tel" disabled>
-                <label class="custom-input__label" for="friend-tel">Номер телефона друга</label>
-                <svg class="custom-input__icon" width="18" height="18" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#icon-phone"></use>
-                </svg>
-              </div>
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="door" id="door">
-                <label class="custom-checkbox__label" for="door">
-                  <span class="custom-checkbox__text">Оставить у&nbsp;двери</span>
-                  <span class="custom-checkbox__description">Включите эту опцию, если уверены в&nbsp;безопасности оставленного пакета</span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Способ оплаты</legend>
-          <div class="order-form__inner">
-            <div class="order-form__radio-wrap">
-              <div class="custom-radio">
-                <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-card" value="card" checked>
-                <label class="custom-radio__label" for="pay-card">Картой онлайн</label>
-              </div>
-              <div class="custom-radio">
-                <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-cash" value="cash">
-                <label class="custom-radio__label" for="pay-cash">Наличными</label>
-              </div>
-              <div class="custom-radio">
-                <input class="custom-radio__field visually-hidden" type="radio" name="pay" id="pay-tel" value="tel">
-                <label class="custom-radio__label" for="pay-tel">По&nbsp;телефону</label>
-              </div>
-            </div>
-            <div class="order-form__wrap">
-              <div class="order-form__card-wrap">
-
-              </div>
-              <div class="custom-checkbox">
-                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="bill" id="bill">
-                <label class="custom-checkbox__label" for="bill">
-                  <span class="custom-checkbox__text">Отправить чек на&nbsp;электронную почту</span>
-                  <span class="custom-checkbox__description">Если хотите всё контролировать ;)</span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Комментарий к&nbsp;заказу</legend>
-          <div class="order-form__inner">
-        
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
       </form>
     </div>
   </section>

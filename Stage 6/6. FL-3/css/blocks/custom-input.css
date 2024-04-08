@@ -1,0 +1,53 @@
+.custom-input {
+	position: relative;
+}
+
+.custom-input--icon .custom-input__field{
+	padding-right: 52px;
+}
+
+.custom-input__field {
+	border: none;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 8px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FFFFFF;
+	padding: 34px 20px 12px;
+	width: 100%;
+}
+
+.custom-input__label {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+}
+
+.custom-input__icon {
+	position: absolute;
+	bottom: 12px;
+	right: 20px;
+	width: 24px;
+	height: 24px;
+	pointer-events: none;
+}
+
+.custom-input__icon-wrap {
+	display: flex;
+	gap: 12px;
+	position: absolute;
+	right: 20px;
+	bottom: 12px;
+}
+
+.custom-input__icon-wrap .custom-input__icon {
+	position: relative;
+	top: 0;
+	left: 0;
+}
