@@ -3,3 +3,95 @@
 	border-radius: 8px;
 	padding: 40px;
 }
+
+.tariff-card__title {
+	font-family: "Press Start 2P", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 28px;
+	color: #fff;
+	margin: 0 0 12px;
+	padding: 0;
+}
+
+.tariff-card__title--accent {
+	color: #87F29A;
+}
+
+.tariff-card__description {
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 24px;
+}
+
+.tariff-card__list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	list-style-type: none;
+	margin: 0 0 40px;
+	padding: 0;
+}
+
+.tariff-card__item {
+	display: flex;
+	gap: 8px;
+}
+
+.tariff-card__num {
+	background-color: #87F29A;
+	border-radius: 12px;
+	padding: 2px 8px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+
+.tariff-card__text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.tariff-card__price-wrap {
+	display: flex;
+	gap: 34px;
+	justify-content: flex-end;
+	margin: 0 0 40px;
+}
+
+.tariff-card__price {
+	font-family: "Press Start 2P", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1;
+	opacity: 1;
+	position: relative;
+}
+
+.tariff-card__price--old {
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.8;
+}
+
+.tariff-card__price--old::after {
+	content: "";
+	width: 104px;
+	height: 2px;
+	background-color: #FF7575;
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tariff-card__agree {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.7;
+	margin: 0	0 24px;
+}
