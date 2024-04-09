@@ -1,3 +1,5 @@
 git rm --cached <file-name>  (удаление из репы (gitignore))
 git rm -r --cached <path>  (тоже самое с папкой)
 
+touch .gitignore (создание gitignore)
+
