@@ -7,8 +7,11 @@
 	line-height: 20px;
 	cursor: pointer;
 	user-select: none;
+	display: block;
 }
 
-.custom-radio__field:checked + .custom-radio__label {
+.custom-radio__field:checked + .custom-radio__label,
+.custom-radio:hover .custom-radio__label,
+.custom-radio__field:focus-visible + .custom-radio__label {
 	color: #87F29A;
 }

@@ -1,0 +1,24 @@
+.btn {
+	background-color: #87F29A;
+	border-radius: 8px;
+	border: none;
+	padding: 16px;
+	width: 100%;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 32px;
+	color: #000;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+	background-color: #78DF8A;
+	outline: none;
+}
+
+.btn:disabled {
+	background-color: #FFFFFF;
+	color: rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+}

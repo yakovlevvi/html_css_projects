@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr 420px;
 	gap: 80px;
+  align-items: start;
 }
 
 .order-form__left-col {
@@ -47,4 +48,9 @@
 	display: grid;
 	grid-template-columns: 1fr repeat(3, 94px);
 	gap: 12px;
+}
+
+.order-form__right-col {
+	position: sticky;
+	top: 80px;
 }

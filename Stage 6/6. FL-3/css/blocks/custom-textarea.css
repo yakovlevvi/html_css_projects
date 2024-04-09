@@ -2,6 +2,18 @@
 	position: relative;
 }
 
+.custom-textarea--error .custom-textarea__field {
+	background-color: rgba(255, 117, 117, 0.15);
+}
+
+.custom-textarea--error .custom-textarea__label {
+	color: #FF7575;
+}
+
+.custom-textarea--error .custom-textarea__error {
+	display: block;
+}
+
 .custom-textarea__field {
 	border: none;
 	background-color: rgba(255, 255, 255, 0.15);
@@ -12,8 +24,29 @@
 	color: #FFFFFF;
 	padding: 34px 20px 12px;
 	width: 100%;
+	min-height: 115px;
+} 
+
+.custom-textarea__field::placeholder {
+	opacity: 0.4;
 }
 
+.custom-textarea__field:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.custom-textarea__field:disabled + .custom-textarea__label {
+	opacity: 0.4;
+	pointer-events: none;
+}
+
+.custom-textarea__field:hover,
+.custom-textarea__field:focus-visible {
+	background-color: rgba(111, 181, 130, 0.15);
+	outline: none;
+}
+ 
 .custom-textarea__label {
 	position: absolute;
 	top: 10px;
@@ -23,4 +56,16 @@
 	line-height: 16px;
 	color: rgba(255, 255, 255, 0.7);
 	cursor: pointer;
+}
+
+.custom-textarea__error {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FF7575;
+	position: absolute;
+	bottom: -8px;
+	transform: translateY(100%);
+	left: 0;
+	display: none;
 }
