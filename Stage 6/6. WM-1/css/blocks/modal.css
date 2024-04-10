@@ -1,0 +1,114 @@
+/* Текущие стили модалки не потребуется дорабатывать */
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  display: none;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal::after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	pointer-events: none;
+}
+
+.modal__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+
+/* Плашку с успешной отправкой спозиционируй от modal__content */
+.modal__content {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	min-height: 660px;
+	background-color: #FFFFFF;
+	padding: 166px 120px;
+}
+
+.modal__accent-text {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #180000;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 60px;
+}
+
+.modal__sent-wrap {
+	background-color: #3C52E6;
+	padding: 14px 16px 18px;
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	text-align: center;
+
+	position: absolute;
+	bottom: 28px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: none;
+}
+
+.modal__sent-wrap--active {
+	display: flex;
+}
+
+.modal__sent-header {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+}
+
+.modal__sent-text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	justify-content: center;
+}
+
+.modal__close-btn {
+	background-color: #3C52E6;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.modal__close-icon {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

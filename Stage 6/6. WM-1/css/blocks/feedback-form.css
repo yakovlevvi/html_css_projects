@@ -1,0 +1,33 @@
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.feedback-form__heading {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;
+}
+
+.feedback-form__bottom {
+	display: grid;
+	grid-template-columns: 460px 1fr;
+	gap: 40px;
+	align-items: end;
+}
+
+.feedback-form__wrap {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.feedback-form__btn {
+	background-color: #3C52E6;
+	padding: 20px 62px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #fff;
+}  

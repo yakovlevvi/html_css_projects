@@ -1,0 +1,28 @@
+.custom-textarea {
+	position: relative;
+}
+
+.custom-textarea__field {
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #C8C8CA;
+	width: 100%;
+	padding: 24px 0 10px;
+	color: #5A5A5A;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	min-height: 114px;
+}
+
+.custom-textarea__label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #99999E;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
