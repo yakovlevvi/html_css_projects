@@ -1,0 +1,43 @@
+.custom-input {
+	position: relative;
+}
+
+.custom-input__field {
+	border: 1px solid #D6D2C4;
+	width: 100%;
+	padding: 18px 20px;
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	color: #1D252D;
+}
+
+.custom-input--icon .custom-input__field {
+	padding-right: 68px;
+}
+
+.custom-input__label {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	background-color: #fff;
+	padding: 0 8px; 
+	user-select: none;
+	cursor: pointer;
+
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 12px;	
+}
+
+.custom-input__icon {
+	color: #D6D2C4;
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	pointer-events: none;
+}

@@ -1,0 +1,60 @@
+.vacancies {
+	padding: 40px 0 94px;
+}
+
+.vacancies__title {
+	font-weight: 200;
+	font-size: 60px;
+	line-height: 72px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.vacancies__heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin: 0 0 37px;
+}
+
+.vacancies__info-wrap {
+	text-align: right;
+}
+
+.vacancies__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.vacancies__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 28px;
+	border-top: 1px solid #D6D2C4;
+}
+
+.vacancies__item:last-child {
+	border-bottom : 1px solid #D6D2C4;
+}
+
+.vacancies__vacancy {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.vacancies__salary {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: right;
+}

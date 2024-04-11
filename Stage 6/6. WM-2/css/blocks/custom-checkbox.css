@@ -1,0 +1,39 @@
+.custom-checkbox {
+	position: relative;
+}
+
+.custom-checkbox__label {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	color: #1D252D;
+	padding-left: 30px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.custom-checkbox__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid #D6D2C4;
+	
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.custom-checkbox__link {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.custom-checkbox__icon {
+	color: #1D252D;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5px;
+	display: none;
+}
