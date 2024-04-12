@@ -41,6 +41,10 @@
 	border-top: 1px solid #D6D2C4;
 }
 
+.vacancies__item:hover {
+	background-color: rgba(214, 210, 196, 0.2);	
+}
+
 .vacancies__item:last-child {
 	border-bottom : 1px solid #D6D2C4;
 }

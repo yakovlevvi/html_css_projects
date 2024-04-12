@@ -84,14 +84,17 @@
             <div class="custom-input">
               <input class="custom-input__field" type="text" name="name" id="name" required>
               <label class="custom-input__label" for="name">Имя*</label>
+              <span class="custom-input__error">Некорректное значение</span>
             </div>
             <div class="custom-input">
               <input class="custom-input__field" type="tel" name="tel" id="tel" required>
               <label class="custom-input__label" for="tel">Телефон*</label>
+              <span class="custom-input__error">Некорректное значение</span>
             </div>
             <div class="custom-input">
               <input class="custom-input__field" type="text" name="surname" id="surname" required>
               <label class="custom-input__label" for="surname">Фамилия*</label>
+              <span class="custom-input__error">Некорректное значение</span>
             </div>
             <div class="custom-input custom-input--icon">
               <input class="custom-input__field" type="email" name="email" id="email" required>
@@ -99,10 +102,12 @@
               <svg class="custom-input__icon" width="28" height="28" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-mail"></use>
               </svg>
+              <span class="custom-input__error">Некорректное значение</span>
             </div>
             <div class="custom-input">
               <input class="custom-input__field" type="text" name="job" id="job" required>
               <label class="custom-input__label" for="job">Желаемая должность*</label>
+              <span class="custom-input__error">Некорректное значение</span>
             </div>
             <div class="custom-input custom-input--icon">
               <input class="custom-input__field" type="url" name="link" id="link" required>
@@ -110,11 +115,13 @@
               <svg class="custom-input__icon" width="28" height="28" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-link"></use>
               </svg>
+              <span class="custom-input__error">Некорректное значение</span>
             </div>
           </div>
           <div class="custom-checkbox summary-form__agree-check">
             <input class="custom-checkbox__field visually-hidden" type="checkbox" name="agree" id="agree">
-            <label class="custom-checkbox__label" for="agree" >Даю согласие на обработку <a class="custom-checkbox__link" href="#" >персональных данных</a></label>
+            <label class="custom-checkbox__label" for="agree">Даю согласие на обработку <a class="custom-checkbox__link"
+                href="#">персональных данных</a></label>
             <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-check"></use>
             </svg>
@@ -124,10 +131,11 @@
       </div>
     </section>
     <div class="cookie cookie--active">
-      <p class="cookie__text">Мы&nbsp;используем файлы cookie для улучшения работы этого сайта. Для получения дополнительной информации ознакомьтесь
-      с&nbsp;нашей <a class="cookie__link" href="#">Политикой конфиденциальности</a></p>
+      <p class="cookie__text">Мы&nbsp;используем файлы cookie для улучшения работы этого сайта. Для получения
+        дополнительной информации ознакомьтесь
+        с&nbsp;нашей <a class="cookie__link" href="#">Политикой конфиденциальности</a></p>
       <button class="btn cookie__btn" type="button">Подробнее</button>
-      <button class="cookie__btn-close" type="button">
+      <button class="cookie__btn-close" type="button" aria-label="Кнопка закрытия модального окна">
         <svg class="cookie__icon" width="20" height="20" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-close"></use>
         </svg>

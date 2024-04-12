@@ -25,6 +25,30 @@
   background-color: transparent;
   border: none;
   transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header__menu:hover, 
+.header__menu:focus-visible {
+  opacity: 0.5;
+  outline: none;
+}
+
+.header__menu::before {
+  content: "";
+  width: 80px;
+  height: 60px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__logo-link:hover,
+.header__logo-link:focus-visible {
+  opacity: 0.5;
+  outline: none;
 }
 
 .header__logo {

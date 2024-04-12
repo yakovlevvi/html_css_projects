@@ -11,3 +11,19 @@
 	width: 100%;
 	cursor: pointer;
 }
+
+.btn:hover {
+	background-color: #1D252D;
+	color: #FFFFFF;
+}
+
+.btn:focus-visible {
+	background-color: #0E1114;
+	color: #FFFFFF;
+	outline: none;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+	pointer-events: none; 
+}

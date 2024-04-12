@@ -26,6 +26,12 @@
 	text-decoration: underline;
 }
 
+.cookie__link:hover,
+.cookie__link:focus-visible {
+	opacity: 0.5;
+	outline: none;
+}
+
 .cookie__btn {
 	padding: 9px;
 	font-size: 12px;
@@ -42,4 +48,10 @@
 	position: absolute;
 	top: 6px;
 	right: 6px;
+}
+
+.cookie__btn-close:hover,
+.cookie__btn-close:focus-visible {
+	opacity: 0.5;
+	outline: none;
 }

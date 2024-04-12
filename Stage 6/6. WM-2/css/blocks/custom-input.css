@@ -2,6 +2,19 @@
 	position: relative;
 }
 
+.custom-input--error .custom-input__field {
+	background-color: #FFFAFA;
+	border-color: #E80E0A;
+}
+
+.custom-input--error .custom-input__icon {
+	color: #F26F6C;
+}
+
+.custom-input--error .custom-input__error {
+	display: block;
+}
+
 .custom-input__field {
 	border: 1px solid #D6D2C4;
 	width: 100%;
@@ -11,6 +24,27 @@
 	font-size: 16px;
 	line-height: 20px;
 	color: #1D252D;
+}
+
+.custom-input__field:hover,
+.custom-input__field:focus-visible {
+	border-color: #1D252D;
+	outline: none;
+}
+
+.custom-input__field:not(:disabled):hover ~ .custom-input__icon,
+.custom-input__field:focus-visible ~ .custom-input__icon {
+	color: #757576;
+}
+
+.custom-input__field:disabled {
+	background-color: #FAFAFA;
+	border-color: #E9E9E9;
+}
+
+.custom-input__field:disabled ~ .custom-input__label {
+	pointer-events: none;
+	color: rgba(29, 37, 45, 0.5);
 }
 
 .custom-input--icon .custom-input__field {
@@ -40,4 +74,18 @@
 	transform: translateY(-50%);
 	right: 20px;
 	pointer-events: none;
+}
+
+.custom-input__error {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	color: #E80E0A;
+
+	position: absolute;
+	bottom: -4px;
+	transform: translateY(100%);
+	left: 0;
+
+	display: none;
 }

@@ -13,6 +13,12 @@
   margin: 0 40px 0 0;
 }
 
+.footer__logo-link:hover,
+.footer__logo-link:focus-visible {
+  opacity: 0.5;
+  outline: none;
+}
+
 .footer__logo {
   color: #FFFFFF;
 }
@@ -38,4 +44,10 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus-visible {
+  text-decoration: underline;
+  outline: none;
 }

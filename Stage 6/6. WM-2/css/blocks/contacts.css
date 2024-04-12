@@ -42,10 +42,22 @@
 	color: inherit;
 }
 
+.contacts__link:hover,
+.contacts__link:focus-visible {
+	text-decoration: underline;
+	outline: none;
+}
+
 .contacts__send-link {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 18px;
 	text-decoration: underline;
 	color: inherit;
+}
+
+.contacts__send-link:hover,
+.contacts__send-link:focus-visible {
+	opacity: 0.5;
+	outline: none;
 }
