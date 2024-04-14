@@ -2,7 +2,6 @@
 	//Main editor settings
 	"window.openFilesInNewWindow": "off",
 	"editor.tabSize": 2,
-	"editor.folding": false,
 	"editor.insertSpaces": false,
 	"editor.smoothScrolling": true,
 	"editor.minimap.enabled": false,
@@ -40,7 +39,7 @@
 	// "editor.bracketPairColorization.enabled": false,
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
-	"editor.scrollbar.vertical": "hidden",
+	// "editor.scrollbar.vertical": "hidden",
 	// "window.density.editorTabHeight": "compact",
 	"workbench.activityBar.location": "top",
 	"editor.accessibilitySupport": "off",
@@ -54,43 +53,43 @@
 	"editor.cursorSmoothCaretAnimation": "explicit",
 
 	// Font
-	"editor.fontSize": 14,
+	"editor.fontSize": 16,
 	"editor.fontLigatures": true,
-	"editor.fontFamily": "JetBrains Mono, Operator mono lig, Iosevka NFM, Monaspace Neon, Maple Mono, MonoLisa, Ubuntu Mono, DejaVu Sans Mono, Fira Code, monoki, Hasklig, PragmataPro, IBM Plex Mono, Victor Mono, Roboto Mono, monospace",
-	"editor.inlayHints.fontFamily": "PragmataPro",
+	"editor.fontFamily": "JetBrains Mono, Iosevka, iA Writer Mono S",
+	// "editor.inlayHints.fontFamily": "PragmataPro",
 
-	"editor.tokenColorCustomizations": {
-		"textMateRules": [
-			{
-				"scope": [
-					//following will be in italic
-					"comment",
-					"entity.name.type.class", //class names
-					"keyword", //import, export, return…
-					"constant", //String, Number, Boolean…, this, super
-					"storage.modifier", //static keyword
-					"storage.type.class.js" //class keyword
-				],
-				"settings": {
-					"fontStyle": "italic"
-				}
-			},
-			{
-				"scope": [
-					//following will be excluded from italics (VSCode has some defaults for italics)
-					"invalid",
-					"keyword.operator",
-					"constant.numeric.css",
-					"keyword.other.unit.px.css",
-					"constant.numeric.decimal.js",
-					"constant.numeric.json"
-				],
-				"settings": {
-					"fontStyle": ""
-				}
-			}
-		]
-	},
+	// "editor.tokenColorCustomizations": {
+	// 	"textMateRules": [
+	// 		{
+	// 			"scope": [
+	// 				//following will be in italic
+	// 				"comment",
+	// 				"entity.name.type.class", //class names
+	// 				"keyword", //import, export, return…
+	// 				"constant", //String, Number, Boolean…, this, super
+	// 				"storage.modifier", //static keyword
+	// 				"storage.type.class.js" //class keyword
+	// 			],
+	// 			"settings": {
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				//following will be excluded from italics (VSCode has some defaults for italics)
+	// 				"invalid",
+	// 				"keyword.operator",
+	// 				"constant.numeric.css",
+	// 				"keyword.other.unit.px.css",
+	// 				"constant.numeric.decimal.js",
+	// 				"constant.numeric.json"
+	// 			],
+	// 			"settings": {
+	// 				"fontStyle": ""
+	// 			}
+	// 		}
+	// 	]
+	// },
 
 	// Terminal
 	// "terminal.integrated.fontFamily": "Iosevka NFM",
@@ -126,17 +125,28 @@
 	// "emmet.triggerExpansionOnTab": true,
 
 	// Format
-	"prettier.semi": false,
+	"editor.formatOnPaste": true,
+	// "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[svg]": {
+		"editor.defaultFormatter": "jock.svg"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"prettier.useTabs": true,
-	"editor.formatOnSave": true,
-	"prettier.singleQuote": true,
+	"prettier.semi": false,
 	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"prettier.arrowParens": "avoid",
+	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
 	},
+
 	//Включите круглые скобки вокруг единственного параметра функции стрелки
-	"prettier.arrowParens": "avoid",
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.inlineSuggest.enabled": true,
 
 	//Breadcrumbs
@@ -195,7 +205,7 @@
 		"**/.idea": true,
 		"**/.next": true,
 		"**/.nuxt": true,
-		"**/dist": true
+		"**/dist": false
 	},
 
 	// OTHER
@@ -235,8 +245,7 @@
 			"editor.selectionBackground": "#222",
 			"editor.lineHighlightBackground": "#333",
 			"tab.activeBackground": "#111",
-			"tab.inactiveBackground": "#222",
-
+			"tab.inactiveBackground": "#222"
 		},
 
 		"[One Monokai]": {
@@ -248,5 +257,16 @@
 			"tab.inactiveBackground": "#2c2c2c"
 		}
 	},
-	"workbench.colorTheme": "One Monokai"
+	"workbench.colorTheme": "Bearded Theme Monokai Black",
+	"window.customTitleBarVisibility": "auto",
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
+
