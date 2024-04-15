@@ -1,0 +1,23 @@
+.custom-radio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.custom-radio__field:checked + .custom-radio__label {
+	background-color: #AD8361;
+	color: #FFFFFF;
+}
+
+.custom-radio__label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -0.04em;
+	text-align: center;
+	color: #AD8361;
+	padding: 4px;
+	user-select: none;
+	cursor: pointer;
+	width: 100%;
+}

@@ -1,0 +1,131 @@
+.filter-form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.filter-form__heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.filter-form__result-text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -0.04em;
+}
+
+.filter-form__reset-btn {
+	border: none;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.filter-form__reset-btn-text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -0.04em;
+	text-transform: uppercase;
+}
+
+.filter-form__group {
+	border: none;
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+}
+
+.filter-form__group-name {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -0.04em;
+	display: block;
+	margin: 0 0 16px;
+	user-select: none;
+}
+
+.filter-form__radio-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.filter-form__radio-list--two-col {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.filter-form__radio-list--two-col .filter-form__radio-item:nth-child(2) {
+		border-right: 1px solid #AD8361;	
+}
+
+.filter-form__radio-list--two-col .filter-form__radio-item:last-child {
+	border-top: none;
+}
+
+.filter-form__radio-item--wide {
+	grid-column: span 2;
+	border-top: none;
+}
+
+.filter-form__radio-list--four-col {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.filter-form__radio-list--five-col {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.filter-form__radio-item {
+	border: 1px solid #AD8361;
+	border-right: none;
+}
+
+.filter-form__radio-item:last-child{
+	border-right: 1px solid #AD8361;	
+}
+
+.filter-form__check-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px 0;
+}
+
+.filter-form__show-btn {
+	border: none;
+	background-color: #fff;
+	box-shadow: 0px 4px 20px 0px #00000033;
+	padding: 12px 16px;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -0.04em;
+	color: #AD8361;
+
+	position: absolute;
+	right: -28px;
+	top: calc(50% - 14px);
+	transform: translate(100%, -50%);
+	z-index: 10;
+
+	display: none;
+}
+
+.filter-form__show-btn--active {
+	display: block;
+}
