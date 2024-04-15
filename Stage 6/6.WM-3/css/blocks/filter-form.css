@@ -116,6 +116,7 @@
 	line-height: 14px;
 	letter-spacing: -0.04em;
 	color: #AD8361;
+	cursor: pointer;
 
 	position: absolute;
 	right: -28px;
@@ -128,4 +129,12 @@
 
 .filter-form__show-btn--active {
 	display: block;
+}
+
+.filter-form__show-btn-icon {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 2px;
+	transform: translate(-100%, -50%);
 }
