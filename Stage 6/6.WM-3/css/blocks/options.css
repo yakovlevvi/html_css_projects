@@ -1,0 +1,51 @@
+.options {
+	 box-shadow: 0px 2px 20px 0px #0000001A;
+	 display: flex;
+	 border-radius: 0 0 20px 20px;
+	 overflow: hidden;
+	 min-width: 420px;
+}
+
+.options__btn {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	border: none;
+	background-color: #F3F3F3;
+	padding: 29px 30px;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: -0.04em;
+}
+
+.options__btn--active {
+	background-color: #FFFFFF;
+}
+
+.options__btn--active .options__text {
+	color: #AC8361;
+}
+
+.options__icon {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #AC8361;
+	position: relative;
+}
+
+.options__icon::before {
+	content: "";
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
