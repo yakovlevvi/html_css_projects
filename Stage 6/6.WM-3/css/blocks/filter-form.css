@@ -28,6 +28,12 @@
 	cursor: pointer;
 }
 
+.filter-form__reset-btn:hover,
+.filter-form__reset-btn:focus-visible {
+	color: #AD8361;
+	outline: none;
+}
+
 .filter-form__reset-btn-text {
 	font-weight: 300;
 	font-size: 14px;
@@ -127,6 +133,13 @@
 	display: none;
 }
 
+.filter-form__show-btn:hover,
+.filter-form__show-btn:focus-visible {
+	background-color: #AD8361;
+	color: #FFFFFF;
+	outline: none;
+}
+
 .filter-form__show-btn--active {
 	display: block;
 }
@@ -137,4 +150,9 @@
 	top: 50%;
 	left: 2px;
 	transform: translate(-100%, -50%);
+}
+
+.filter-form__show-btn:hover .filter-form__show-btn-icon,
+.filter-form__show-btn:focus-visible .filter-form__show-btn-icon {
+	color: #AD8361;
 }

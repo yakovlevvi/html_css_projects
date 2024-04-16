@@ -20,6 +20,12 @@
 	padding: 0;
 }
 
+.header__burger:hover,
+.header__burger:focus-visible {
+	color: #AC8361;
+	outline: none;
+}
+
 .header__burger::before {
 	content: "";
 	width: 44px;
@@ -48,6 +54,12 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
+}
+
+.header__link:hover,
+.header__link:focus-visible {
+	color: #AC8361;
+	outline: none;
 }
 
 .header__link--icon {

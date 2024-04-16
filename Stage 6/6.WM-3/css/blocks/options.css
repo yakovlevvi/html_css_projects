@@ -22,6 +22,12 @@
 	letter-spacing: -0.04em;
 }
 
+.options__btn:hover,
+.options__btn:focus-visible {
+	color: #AC8361;
+	outline: none;
+}
+
 .options__btn--active {
 	background-color: #FFFFFF;
 }

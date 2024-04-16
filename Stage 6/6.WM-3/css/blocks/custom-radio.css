@@ -9,6 +9,16 @@
 	color: #FFFFFF;
 }
 
+.custom-radio__field:focus-visible + .custom-radio__label {
+	background-color: #EFEDE7;
+	color: #AD8361;
+}
+
+.custom-radio__field:disabled + .custom-radio__label {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
 .custom-radio__label {
 	font-weight: 400;
 	font-size: 12px;
@@ -20,4 +30,8 @@
 	user-select: none;
 	cursor: pointer;
 	width: 100%;
+}
+
+.custom-radio__label:hover {
+	 color: #090909;
 }

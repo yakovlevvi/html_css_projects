@@ -3,6 +3,32 @@
 	background-color: #FFFFFF;
 }
 
+.catalog-card__inner:hover::after,
+.catalog-card__inner:focus-visible::after,
+.catalog-card__inner:hover ~ .catalog-card__btn-open,
+.catalog-card__inner:focus-visible ~ .catalog-card__btn-open {
+	display: block;
+}
+
+.catalog-card__inner:focus-visible {
+	outline: none;
+}
+
+.catalog-card__inner::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(117, 114, 110, 0.2);
+	pointer-events: none;
+	z-index: 3;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: none;
+}
+
 .catalog-card__top {
 	row-gap: 48px;
 	display: flex;
@@ -112,4 +138,43 @@
   border: none;
   border-radius: 0;
 	cursor: pointer;
+}
+
+.catalog-card__btn-like--active .catalog-card__like-icon {
+	color: #AC8361;
+}
+
+.catalog-card__btn-like:hover .catalog-card__like-icon,
+.catalog-card__btn-like:focus-visible .catalog-card__like-icon	 {
+	color: #EFEDE7;
+}
+
+.catalog-card__btn-like:focus-visible {
+	outline: none;
+}
+
+.catalog-card__btn-like:active .catalog-card__like-icon {
+	color: #AC8361;
+}
+
+.catalog-card__btn-open {
+	border: none;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #AC8361;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+
+	display: none;
+}
+
+.catalog-card__open-icon {
+	color: #fff;
 }

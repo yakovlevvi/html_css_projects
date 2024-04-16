@@ -15,6 +15,21 @@
 	letter-spacing: -0.04em;
 }
 
+.custom-input__field:hover,
+.custom-input__field:focus-visible {
+	border-color: #AD8361;
+	outline: none;
+}
+
+.custom-input__field:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.custom-input__field:disabled + .custom-input__icon {
+	opacity: 0.5;
+}
+
 .custom-input__icon {
 	color: #ad8361;
 	position: absolute;
