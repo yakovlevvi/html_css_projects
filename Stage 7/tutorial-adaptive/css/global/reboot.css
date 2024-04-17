@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Exo-2", "Arial", sans-serif;
+  font-weight: 300;
+	color: #1D252D;
+  background-color: #1F2023;
+}
+
+main {
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: #1D252D;
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.colors {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+	padding: 120px 0;
+}
+
+.colors__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 1439px) {
+  .colors__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .colors__list {
+    grid-template-columns: 1fr;
+  }
+}

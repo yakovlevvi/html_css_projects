@@ -1,0 +1,64 @@
+.color-card {
+	display: flex;
+	align-items: center;
+	min-height: 200px;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.2);
+}
+
+.color-card:hover {
+	box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.8);
+} 
+
+.color-card__title {
+	margin: 0;
+	font-size: 34px;
+	line-height: 40px;
+	color: #f5eeee;
+	text-align: center;
+}
+
+.color-card--blue {
+	background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+}
+
+.color-card--red {
+	background-image: linear-gradient(316deg, #99201c 0%, #f56545 74%);
+}
+
+.color-card--green {
+	background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+}
+
+.color-card--yellow {
+	background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+
+.color-card--black {
+	background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+.color-card--orange {
+	background-image: linear-gradient(315deg, #ffd045 0%, #d14545 74%);
+}
+
+.color-card--gray {
+	background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+}
+
+.color-card--pink {
+	background-image: linear-gradient(315deg, #d3d3d3 0%, #ff9ff3 74%);
+}
+
+@media (max-width: 1439px) {
+  .color-card__title {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+  .color-card__title {
+		font-size: 28px;
+	}
+}
