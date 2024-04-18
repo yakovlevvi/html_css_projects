@@ -1,0 +1,51 @@
+.hero {
+  background-color: $color-tara-80;
+  padding: 105px 0;
+  margin: 0 0 60px;
+  min-height: calc(100vh - 182px);
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 640px;
+    gap: 55px;
+    align-items: center;
+  }
+  
+  &__text {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $color-verdun-green;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.05em;
+  }
+  
+  &__slogan {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 50px 0;
+    color: $color-verdun-green;
+  }
+  
+  &__btn {
+    width: 420px;
+  }
+  
+  &__gallery-list {
+    display: grid;
+    grid-template-columns: 305px 300px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px 35px;
+  }
+
+  &__gallery-item {
+    &--size-xl {
+      grid-row: span 2;
+    }
+  }
+}
+

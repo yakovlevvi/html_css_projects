@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Главная страница - Зеленый пассажир</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:+79279999999">
+            <svg width="14" height="14" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            <span class="header__phone-text">+7 927 999-99-99</span>
+          </a>
+          <button class="header__callback" type="button">Перезвоните мне</button>
+        </div>
+        <a class="header__logo" href="#" aria-label="Ссылка на главную">
+          <svg width="320" height="56" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+        <div class="header__users">
+          <form class="header__search" action="#" method="GET">
+            <div class="custom-search">
+              <input type="search" class="custom-search__field" aria-label="Поле поиска" name="search-field"
+                placeholder="Поиск" autocomplete="off">
+              <svg class="custom-search__icon" width="18" height="18" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </div>
+          </form>
+          <ul class="header__user-list">
+            <li class="header__user-item">
+              <a class="header__user-link" href="#" aria-label="Перейти в корзину">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-basket"></use>
+                </svg>
+                <span class="header__user-count" aria-hidden="true">4</span>
+              </a>
+            </li>
+            <li class="header__user-item">
+              <a class="header__user-link" href="#" aria-label="Перейти в избранное">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-favorite"></use>
+                </svg>
+                <span class="header__user-count" aria-hidden="true">0</span>
+              </a>
+            </li>
+            <li class="header__user-item">
+              <button class="header__burger" type="button" aria-label="Открыть выпадающее меню">
+                <svg width="34" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-burger"></use>
+                </svg> 
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-leaf"></use>
+              </svg>
+              <span class="header__nav-text">О Растениях</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-leaf"></use>
+              </svg>
+              <span class="header__nav-text">О Компании</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-leaf"></use>
+              </svg>
+              <span class="header__nav-text">Сотрудничество</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-leaf"></use>
+              </svg>
+              <span class="header__nav-text">Каталог</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg width="14" height="14" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-leaf"></use>
+              </svg>
+              <span class="header__nav-text">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- <section class="hero">
+      <div class="container">
+        <h1 class="visually-hidden">Интернет магазин комнатный растений "Зеленый пассажир"</h1>
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <p class="hero__text">Присоединяйтесь к&nbsp;Зеленому Пассажиру и&nbsp;превратите свой дом в&nbsp;настоящий
+              оазис зелени и&nbsp;комфорта!</p>
+            <p class="hero__slogan">Вместе с&nbsp;нами растет жизнь</p>
+            <a class="hero__btn btn btn--size-xl" href="#">Перейти в каталог</a>
+          </div>
+          <ul class="hero__gallery-list">
+            <li class="hero__gallery-item hero__gallery-item--size-xl">
+              <img class="hero__gallery-image" src="images/gallery-1.png" srcset="images/gallery-1@2x.png 2x"
+                  height="490" width="305" alt="Изображение комнатного растения">
+            </li>
+            <li class="hero__gallery-item">
+              <img class="hero__gallery-image" src="images/gallery-2.png" srcset="images/gallery-2@2x.png 2x"
+                  height="220" width="300" alt="Изображение комнатного растения">
+            </li>
+            <li class="hero__gallery-item">
+              <img class="hero__gallery-image" src="images/gallery-3.png" srcset="images/gallery-3@2x.png 2x"
+                  height="220" width="300" alt="Изображение комнатного растения">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about-company">
+      <div class="container">
+        <h2 class="visually-hidden">О компании</h2>
+        <div class="about-company__wrapper">
+          <aside class="aside-nav">
+            <h2 class="aside-nav__heading">Популярные категории растений</h2>
+            <ul class="aside-nav__list">
+              <li class="aside-nav__item">
+                <a class="aside-nav__link" href="#">
+                  <svg width="37" height="55" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-cactus"></use>
+                  </svg>
+                  <span class="aside-nav__link-text">Кактусы</span>
+                </a>
+              </li>
+              <li class="aside-nav__link">
+                <svg width="37" height="57" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-blooming"></use>
+                </svg>
+                <span class="aside-nav__link-text">Цветущие</span>
+              </li>
+              <li class="aside-nav__link">
+                <svg width="37" height="57" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-succulents"></use>
+                </svg>
+                <span class="aside-nav__link-text">Суккуленты</span>
+              </li>
+              <li class="aside-nav__link">
+                <svg width="37" height="57" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-deciduous"></use>
+                </svg>
+                <span class="aside-nav__link-text">Лиственные</span>
+              </li>
+            </ul>
+          </aside>
+          <div class="about-company__image">
+            <img src="images/about-company.jpg" srcset="images/about-company@2x.jpg 2x" height="300" width="300"
+                alt="Фотография девушки и растения">
+          </div>
+          <div class="about-company__description">
+            <p class="about-company__text">
+              <b>&laquo;Зеленый Пассажир&raquo;</b>&nbsp;&mdash; это уникальный интернет-магазин, созданный для
+              любителей зелени в&nbsp;доме и&nbsp;тех, кто стремится сделать свой дом ближе к&nbsp;природе.
+              Мы&nbsp;специализируемся на&nbsp;предоставлении разнообразных комнатных растений высокого качества,
+              которые не&nbsp;только украсят ваш интерьер, но&nbsp;и&nbsp;создадут удивительную атмосферу в&nbsp;вашем
+              доме.
+            </p>
+            <p class="about-company__text">Мы&nbsp;предлагает богатый выбор комнатных растений различных видов
+              и&nbsp;размеров: от&nbsp;маленьких красивых кактусов до&nbsp;великолепных фикусов и&nbsp;монстер.
+              Мы&nbsp;также предлагаем аксессуары для ухода за&nbsp;растениями, стильные горшки и&nbsp;другие элементы
+              декора, чтобы ваш дом был не&nbsp;только зеленым, но&nbsp;и&nbsp;стильным.</p>
+            <p class="about-company__text">Мы&nbsp;бережно относимся к&nbsp;природе и&nbsp;предпринимаем шаги для
+              минимизации нашего экологического следа. Вся упаковка наших товаров устойчива к&nbsp;окружающей среде,
+              и&nbsp;мы&nbsp;поощряем наших клиентов участвовать в&nbsp;программе переработки.</p>
+            <p class="about-company__text">&laquo;Зеленый Пассажир&raquo; гордится качественным обслуживанием клиентов.
+              Наши опытные специалисты всегда готовы ответить на&nbsp;ваши вопросы и&nbsp;предоставить необходимую
+              информацию.</p>
+          </div>
+        </div>
+        <ul class="about-company__list">
+          <li class="about-company__item">
+            <p class="about-company__card-text">
+              <b>Удобство:</b> На&nbsp;нашем сайте вы&nbsp;найдете интуитивно понятный интерфейс, удобный поиск
+              и&nbsp;подробные описания каждого товара. Заказать растение стало проще простого!
+            </p>
+          </li>
+          <li class="about-company__item">
+            <p class="about-company__card-text">
+              <b>Быстрая доставка:</b> Мы&nbsp;ценим ваше время. Наши службы доставки работают оперативно, чтобы ваше
+              новое растение попало к&nbsp;вам в&nbsp;руки максимально быстро.
+            </p>
+          </li>
+          <li class="about-company__item about-company__item--size-xl">
+            <p class="about-company__card-text">
+              <b>Качество:</b> Мы&nbsp;гордимся предоставлением только здоровых и&nbsp;красивых растений. Все растения
+              тщательно отобраны и&nbsp;проверены на&nbsp;соответствие высоким стандартам.
+            </p>
+          </li>
+        </ul>
+        <a class="about-company__btn btn" href="#">Узнать подробнее</a>
+      </div>
+    </section>
+    <section class="application">
+      <div class="container">
+        <div class="application__wrapper">
+          <h2 class="application__title">Оставить заявку</h2>
+        <form class="application__form" action="#" method="POST">
+          <div class="application__inner">
+            <fieldset class="application__group">
+              <legend class="application__group-name">Покупатель</legend>
+              <div class="application__form-wrapper">
+                <div class="custom-input application__input">
+                  <input class="custom-input__field" type="text" name="user-last-name" id="user-last-name"
+                    placeholder="Кириллов" required>
+                  <label class="custom-input__label" for="user-last-name">Фамилия *</label>
+                  <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                </div>
+                <div class="custom-input application__input">
+                  <input class="custom-input__field" type="text" name="user-last-name" id="user-name" placeholder="Олег"
+                    required>
+                  <label class="custom-input__label" for="user-name">Имя *</label>
+                  <span class="custom-input__error">Данное поле должно быть заполнено</span>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="application__group">
+              <legend class="application__group-name">Контактная информация</legend>
+              <div class="application__form-wrapper">
+                <div class="custom-input custom-input--icon application__input">
+                  <input class="custom-input__field" type="tel" name="user-phone" id="user-phone"
+                    placeholder="+7999999999" required>
+                  <label class="custom-input__label" for="user-phone">
+                    <span class="custom-input__label-text">Телефон *</span>
+                  </label>
+                  <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-phone-2"></use>
+                  </svg>
+                </div>
+                <div class="custom-input custom-input--icon application__input">
+                  <input class="custom-input__field" type="email" name="user-mail" id="user-mail"
+                    placeholder="mail@mail.ru">
+                  <label class="custom-input__label" for="user-mail">
+                    <span class="custom-input__label-text">Почта</span>
+                  </label>
+                  <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button class="application__btn btn" type="submit">Оформить заказ</button>
+          <div class="custom-checkbox application__checkbox">
+            <input class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree">
+            <label for="agree" class="custom-checkbox__label">
+              <span class="custom-checkbox__heading">Нажимая кнопку, вы соглашаетесь на <a
+                  class="custom-checkbox__label-link" href="#">обработку ваших персональных данных</a></span>
+              <svg class="custom-checkbox__icon" width="18" height="13" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-check"></use>
+              </svg>
+            </label>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <a class="footer__logo-link" href="#" aria-label="Ссылка на главную страницу">
+            <svg width="202" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-footer-logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на соцсеть ВКонтакте">
+                <svg width="22" height="13" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на соцсеть Одноклассники">
+                <svg width="15" height="22" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">О растениях</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">О Компании</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Сотрудничество</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Каталог</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Новости</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <div class="footer__contact">
+            <span class="footer__contact-text">Телефон:</span>
+            <a class="footer__contact-link" href="tel:+79279999999">+7 927 999-99-99</a>
+          </div>
+          <div class="footer__contact">
+            <span class="footer__contact-text">Почта:</span>
+            <a class="footer__contact-link" href="mailto:hello@gpassenger.ru">hello@gpassenger.ru</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy;&nbsp;2023 зеленый пассажир, Все права защищены</p>
+    </div>
+  </footer>
+</body>
+
+</html>

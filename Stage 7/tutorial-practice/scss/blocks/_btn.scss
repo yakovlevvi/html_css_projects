@@ -1,0 +1,29 @@
+.btn {
+  display: block;
+  text-transform: uppercase;
+  background-color: $color-white;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: $color-daisy-bush;
+  border: 2px solid $color-daisy-bush;
+  padding: 16px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: inherit;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-daisy-bush;
+  }
+}
+
+.btn--size-xl {
+  font-size: 24px;
+  line-height: 24px;
+  background-color: $color-daisy-bush;
+  color: $color-white;
+  padding: 30px;
+  border: none;
+}

@@ -1,0 +1,37 @@
+.aside-nav {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $color-solitude;
+}
+
+.aside-nav__heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 0 25px;
+  text-align: center;
+  color: $color-verdun-green;
+}
+
+.aside-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.aside-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.aside-nav__link-text {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-verdun-green;
+}

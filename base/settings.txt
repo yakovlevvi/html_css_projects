@@ -281,6 +281,7 @@
 			"savePath": "/",
 			"savePathReplacementPairs": null
 		}
-	]
+	],
+	"liveSassCompile.settings.showOutputWindowOn": "None"
 }
 
