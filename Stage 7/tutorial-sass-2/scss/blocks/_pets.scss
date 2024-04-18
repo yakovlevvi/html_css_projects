@@ -1,0 +1,53 @@
+.pets {
+	overflow: hidden;
+	padding: 96px 0 116px;
+
+	@media (max-width: $vp-tablet) {
+		padding: 60px 0 119px;
+	}
+
+	@media (max-width: $vp-mobile) {
+		padding: 40px 0 143px;
+	}
+
+	&__title {
+		margin: 0 0 84px;
+		font-size: 48px;
+		font-family: $ff-montserrat;
+		font-weight: 700;
+		line-height: 36px;
+		color: $color-carmine;
+		text-align: center;
+		text-transform: uppercase;
+
+		@media (max-width: $vp-tablet) {
+			margin: 0 0 60px;
+			font-size: 36px;
+		}
+
+		@media (max-width: $vp-mobile) {
+			margin: 0 0 30px;
+			font-size: 24px;
+		}
+	}
+
+	&__list {
+    @include listreset;
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px 20px;
+		margin-bottom: 62px;
+		padding: 0;list-style: none;
+		@media (max-width: $vp-tablet) {
+			grid-template-columns: repeat(2, 1fr);
+			margin: 0 0 60px;
+		}
+
+		@media (max-width: $vp-mobile) {
+			grid-template-columns: 1fr;
+			gap: 30px;
+			margin: 0 0 53px;
+		}
+	}
+}

@@ -1,0 +1,89 @@
+.banner {
+	min-height: 710px;
+	padding: 100px 65px;
+	background-image: url('../../images/bg-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+
+	@include vp-1439 {
+		min-height: 700px;
+		padding: 116px 33px;
+	}
+
+	@include vp-767 {
+		min-height: 682px;
+		padding: 42px 15px;
+	}
+
+	&__text-block {
+		display: flex;
+		flex-direction: column;
+		gap: 44px;
+		width: 616px;
+		margin-bottom: 63px;
+
+		@include vp-1439 {
+			gap: 44px;
+			width: 459px;
+			margin-bottom: 63px;
+		}
+
+		@include vp-767 {
+			gap: 28px;
+			width: 100%;
+			margin-bottom: 27px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 36px;
+		line-height: 44px;
+		color: $color-white;
+
+		@include vp-1439 {
+			font-size: 32px;
+			line-height: 38px;
+		}
+
+		@include vp-767 {
+			font-size: 24px;
+			line-height: 29px;
+			text-align: center;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 365px;
+		padding: 28px;
+		font-size: 24px;
+		line-height: 16px;
+		color: $color-carmine;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: $color-white;
+		border: 1px solid $color-light-grey;
+		border-radius: 10px;
+
+		@include vp-1439 {
+			color: $color-midnight-express;
+		}
+
+		@include vp-767 {
+			width: 100%;
+			padding: 23px;
+			font-size: 16px;
+			line-height: 16px;
+		}
+
+		&:hover {
+			color: $color-burgundy;
+
+			@include vp-1439 {
+				color: $color-sapphire;
+			}
+		}
+	}
+}

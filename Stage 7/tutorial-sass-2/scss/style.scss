@@ -1,0 +1,14 @@
+/* Global */
+@import "./_variables";
+@import "./_mixins";
+
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+
+@import "blocks/_pets-card";
+@import "blocks/_pets";
+@import "blocks/_banner";
