@@ -1,0 +1,6 @@
+{
+	"vp": {
+		"prefix": "vp",
+		"body": "@include vp-"
+	}
+}
