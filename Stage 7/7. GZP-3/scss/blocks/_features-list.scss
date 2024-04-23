@@ -6,6 +6,12 @@
   margin: 0;
   padding: 0;
 
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
   &--alternate {
     grid-template-columns: repeat(4, 1fr);
   }

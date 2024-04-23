@@ -3,44 +3,19 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: $color-cornflower-blue;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 12px;
   padding: 20px 20px 32px;
+  position: relative;
+  overflow: hidden;
 
-  // Удалить модификаторы у элементов и фоновые картинки. Заменить изображениями в разметке!
-
-  &--privileges {
-    background-image: url("../images/advice-image-1-desktop.jpg");
+  @include vp-1023 {
+    min-height: 380px;
+    padding: 20px 20px 28px;
   }
 
-  &--rating {
-    background-image: url("../images/advice-image-2-desktop.jpg");
-  }
-
-  &--gold {
-    background-image: url("../images/advice-image-3-desktop.jpg");
-  }
-
-  &--tax-deduction {
-    background-image: url("../images/advice-image-4-desktop.jpg");
-  }
-
-  &--sbp {
-    background-image: url("../images/advice-image-5-desktop.jpg");
-  }
-
-  &--dismissal {
-    background-image: url("../images/advice-image-6-desktop.jpg");
-  }
-
-  &--hide-balance {
-    background-image: url("../images/advice-image-7-desktop.jpg");
-  }
-
-  &--credit {
-    background-image: url("../images/advice-image-8-desktop.jpg");
+  @include vp-767 {
+    min-height: 320px;
+    padding: 15px 15px 20px;
   }
 
   &__top {
@@ -48,12 +23,21 @@
     align-items: center;
     gap: 8px;
     margin: 0 0 20px 0;
+
+    @include vp-767 {
+      gap: 5px;
+    }
   }
 
   &__img {
     @include vp-1023 {
       width: 32px;
       height: 32px;
+    }
+
+    @include vp-767 {
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -66,6 +50,19 @@
     @include vp-1023 {
       font-size: 12px;
     }
+
+    @include vp-767 {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
   }
 
   &__title {
@@ -74,9 +71,24 @@
     line-height: 24px;
     font-weight: 700;
     color: $color-white;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
   }
 
   &__btn {
     padding: 14px;
+
+    @include vp-1023 {
+      padding: 10px;
+    }
   }
 }
