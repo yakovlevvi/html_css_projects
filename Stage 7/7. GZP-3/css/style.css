@@ -656,6 +656,13 @@ a {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 767px) {
+  .press-room__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
 .press-room__wrapper {
   display: grid;
   grid-template-columns: 420px 740px;
@@ -686,11 +693,15 @@ a {
 }
 @media (max-width: 1023px) {
   .press-room__newsletter {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right;
+    background-image: url("../../images/subscribe-image-tablet.png");
     align-items: center;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .press-room__newsletter {
+    background-image: unset;
+    margin-bottom: 15px;
   }
 }
 .press-room__newsletter-title {
@@ -703,6 +714,15 @@ a {
   .press-room__newsletter-title {
     text-align: center;
     max-width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .press-room__newsletter-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
   }
 }
 .press-room__newsletter-text {
@@ -714,10 +734,24 @@ a {
 @media (max-width: 1023px) {
   .press-room__newsletter-text {
     margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .press-room__newsletter-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
   }
 }
 .press-room__newsletter-btn {
   width: 115px;
+}
+@media (max-width: 1023px) {
+  .press-room__newsletter-btn {
+    min-width: 138px;
+  }
 }
 
 .socials {
@@ -742,6 +776,18 @@ a {
   border-radius: 50%;
   background-color: #EDEEEF;
 }
+@media (max-width: 1023px) {
+  .socials__link {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .socials__link svg {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 .news {
   display: flex;
@@ -763,10 +809,20 @@ a {
 .news__image {
   width: 100%;
 }
+@media (max-width: 1023px) {
+  .news__image {
+    min-height: 100px;
+  }
+}
 .news__content {
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
+}
+@media (max-width: 767px) {
+  .news__content {
+    padding: 15px;
+  }
 }
 .news__date {
   margin: 0 0 10px;
@@ -780,6 +836,11 @@ a {
     line-height: 16px;
   }
 }
+@media (max-width: 767px) {
+  .news__date {
+    margin-bottom: 5px;
+  }
+}
 .news__title {
   margin: 0 0 20px;
   font-size: 20px;
@@ -789,6 +850,13 @@ a {
   .news__title {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .news__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
   }
 }
 .news__text {
@@ -887,16 +955,38 @@ a {
   height: 100%;
   padding: 32px 20px 20px;
 }
+@media (max-width: 1023px) {
+  .features-card--vertical {
+    padding: 15px;
+    position: relative;
+  }
+}
 .features-card--vertical .features-card__wrapper {
   flex-direction: column;
   height: 100%;
   margin: 0 0 25px 0;
 }
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__wrapper {
+    margin-bottom: 20px;
+  }
+}
 .features-card--vertical .features-card__inner {
   align-items: center;
 }
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__inner {
+    align-items: start;
+    max-width: 180px;
+  }
+}
 .features-card--vertical .features-card__label {
   margin: 0 0 8px 0;
+}
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__label {
+    margin-bottom: 10px;
+  }
 }
 .features-card--vertical .features-card__title {
   font-size: 20px;
@@ -904,17 +994,51 @@ a {
   margin: 0 0 8px 0;
   text-align: center;
 }
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+}
 .features-card--vertical .features-card__note {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
 }
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__note {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
 .features-card--vertical .features-card__picture {
   margin: auto auto 0;
   padding: 0 18px;
 }
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__picture {
+    padding: 0;
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .features-card--vertical .features-card__picture {
+    position: unset;
+  }
+}
 .features-card--vertical .features-card__btn {
   margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .features-card--vertical .features-card__btn {
+    margin: 0;
+  }
 }
 .features-card--reverse .features-card__label {
   border: 1px solid rgba(255, 255, 255, 0.5);
