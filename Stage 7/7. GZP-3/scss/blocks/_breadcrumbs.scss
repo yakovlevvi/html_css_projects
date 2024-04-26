@@ -38,6 +38,8 @@
     position: relative;
     text-decoration: none;
 
+
+
     @include vp-767 {
       font-size: 12px;
       line-height: 16px;
@@ -45,6 +47,12 @@
 
     &:not(.breadcrumbs__link--active) {
       color: $color-manatee-1;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-royal-blue;
+        outline: none;
+      }
 
       &::after {
         content: "";

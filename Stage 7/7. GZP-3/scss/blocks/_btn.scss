@@ -11,6 +11,17 @@
   text-decoration: none;
   background-color: $color-royal-blue;
 
+  &:hover, &:focus-visible {
+    background-color: $color-free-speech-blue;
+    outline: none;
+  }
+
+  &[disabled] {
+    background-color: $color-white-smoke;
+    color: $color-manatee-2;
+    pointer-events: none;
+  }
+
   @include vp-1023 {
     font-size: 12px;
     line-height: 16px;
@@ -19,5 +30,10 @@
   &--invert {
     color: $color-royal-blue;
     background-color: $color-white;
+
+    &:hover, &:focus-visible {
+      background-color: $color-solitude-3;
+      outline: none;
+    }
   }
 }
