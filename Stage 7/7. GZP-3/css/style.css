@@ -580,13 +580,6 @@ a {
   position: relative;
   overflow: hidden;
 }
-.advice-card:hover, .advice-card:focus-visible {
-  cursor: pointer;
-  outline: none;
-}
-.advice-card:hover .advice-card__btn, .advice-card:focus-visible .advice-card__btn {
-  background-color: #3356D7;
-}
 @media (max-width: 1023px) {
   .advice-card {
     min-height: 380px;
