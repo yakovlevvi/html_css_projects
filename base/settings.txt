@@ -257,7 +257,7 @@
 			"tab.inactiveBackground": "#2c2c2c"
 		}
 	},
-	"workbench.colorTheme": "Bearded Theme Monokai Black",
+	"workbench.colorTheme": "Bearded Theme Monokai Metallian",
 	"window.customTitleBarVisibility": "auto",
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -278,10 +278,9 @@
 		{
 			"format": "expanded",
 			"extensionName": ".css",
-			"savePath": "/",
+			"savePath": "/css",
 			"savePathReplacementPairs": null
 		}
 	],
 	"liveSassCompile.settings.showOutputWindowOn": "None"
 }
-

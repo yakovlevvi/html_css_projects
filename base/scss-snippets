@@ -2,5 +2,9 @@
 	"vp": {
 		"prefix": "vp",
 		"body": "@include vp-"
+	},
+	"hov": {
+		"prefix": "hov",
+		"body": "&:hover, &:focus-visible {\n\t${0}\n\toutline:none;\n}"
 	}
 }
