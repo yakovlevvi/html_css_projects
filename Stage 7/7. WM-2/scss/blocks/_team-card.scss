@@ -49,14 +49,11 @@
     height: 100%;
 
     @include vp-767 {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 15px;
+      flex-grow: 1;
     }
-  }
-
-  &__picture {
-    display: flex;
-    height: 100%;
   }
 
   &__img {
@@ -73,10 +70,14 @@
   &__inner {
     display: flex;
     flex-direction: column;
+
+    @include vp-767 {
+      flex-grow: 1;
+    }
   }
 
   &__quote {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
     font-size: 16px;
     line-height: 22px;
 
@@ -84,7 +85,6 @@
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 10px;
-      height: 100%;
     }
   }
 
