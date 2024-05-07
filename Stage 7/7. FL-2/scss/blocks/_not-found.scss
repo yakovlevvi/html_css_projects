@@ -1,20 +1,26 @@
 .not-found {
-	position: absolute;
-	top: calc(50% - 40px);
-	transform: translateY(-50%);
-	width: 100%;
-
-	@include vp-767 {
-		top: 80px;
-		transform: none;
-	}
 
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
-		align-items: center;
+		justify-content: center;
 		position: relative;
+		min-height: calc(100vh - 80px);
+		padding-bottom: 80px;
+
+		@include vp-767 {
+			justify-content: start;
+			min-height: calc(100vh - 56px);
+			padding-top: 80px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		height: 100%;
 
 		@include vp-767 {
 			gap: 10px;
@@ -90,13 +96,12 @@
 	&__bg-img {
 		position: absolute;
 		left: 0;
-		top: calc(50% - 60px);
+		bottom: 0;
 		z-index: -1;
 
 		@include vp-1023 {
 			width: 330px;
 			height: 330px;
-			top: calc(50% + 40px);
 		}
 
 		@include vp-767 {
@@ -104,7 +109,6 @@
 			height: 290px;
 			left: 50%;
 			transform: translateX(-50%);
-			top: 214px;
 		}
 	}
 }
