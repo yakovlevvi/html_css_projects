@@ -1776,7 +1776,7 @@ a {
   height: 200px;
   background: linear-gradient(180deg, rgba(42, 82, 163, 0) 0%, rgba(42, 82, 163, 0.6) 46.28%, #2a52a3 89%);
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
 @media (max-width: 1023px) {
@@ -1788,6 +1788,9 @@ a {
   .unique-apartments__img-wrapper::after {
     height: 50px;
   }
+}
+.unique-apartments__image {
+  width: 100%;
 }
 .unique-apartments__benefit {
   border: 0;
