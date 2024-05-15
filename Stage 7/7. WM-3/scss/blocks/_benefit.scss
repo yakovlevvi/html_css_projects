@@ -42,6 +42,14 @@
     }
   }
 
+  &--night-pond {
+    background-image: url("../../images/image-night-pond.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-night-pond@2x.jpg");
+    }
+  }
+
   &--entrance {
     background-image: url("../../images/image-view-entrance-building.jpg");
 
@@ -51,6 +59,14 @@
 
     @include vp-767 {
       display: none;
+    }
+  }
+
+  &--quiet {
+    background-image: url("../../images/image-quiet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/image-quiet@2x.jpg");
     }
   }
 

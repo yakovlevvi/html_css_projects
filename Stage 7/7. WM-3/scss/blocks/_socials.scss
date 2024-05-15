@@ -18,5 +18,10 @@
   &__link {
     display: flex;
     color: $color-white-20;
+    
+    &:hover, &:focus-visible {
+      color: $color-white;
+      outline:none;
+    }
   }
 }
