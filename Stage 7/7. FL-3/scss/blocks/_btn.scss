@@ -13,10 +13,20 @@
   line-height: 18px;
   cursor: pointer;
 
+  &:hover, &:focus-visible {
+    background-color: $color-white-lilac-2;
+    outline:none;
+  }
+
   &--bg-lilac {
     background-color: $color-deep-lilac;
     border: none;
     color: $color-white;
+
+    &:hover, &:focus-visible {
+      background-color: $color-deep-lilac-2;
+      outline:none;
+    }
   }
 
   &--size-small {

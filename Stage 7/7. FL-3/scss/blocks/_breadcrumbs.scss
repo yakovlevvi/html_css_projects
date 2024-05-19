@@ -40,6 +40,13 @@
     color: $color-nobel;
   }
 
+  &__link:not(.breadcrumbs__link--active) {
+    &:hover, &:focus-visible {
+      color: $color-deep-lilac;
+      outline:none;
+    }
+  }
+
   &__link:not(.breadcrumbs__link--active)::after  {
     content: "";
     width: 3px;

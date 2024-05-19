@@ -21,5 +21,10 @@
     font-weight: 500;
     line-height: 20px;
     color: $color-white;
+
+    &:hover, &:focus-visible {
+      opacity: 0.5;
+      outline:none;
+    }
   }
 }

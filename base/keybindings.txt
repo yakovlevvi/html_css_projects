@@ -108,11 +108,6 @@
 		"when": "inEditorsPicker && inQuickOpen"
 	},
 	{
-		"key": "pageup pageup",
-		"command": "editor.action.rename",
-		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-	},
-	{
 		"key": "f2",
 		"command": "-editor.action.rename",
 		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"

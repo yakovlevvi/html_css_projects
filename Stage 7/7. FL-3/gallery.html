@@ -1155,6 +1155,132 @@
 			<div class="modal__wrapper">
 				<div class="modal__content">
 					<!-- Место для формы и успешной отправки -->
+					<div class="modal__form-wrap">
+						<form
+							class="request-form"
+							action="#"
+							method="post"
+						>
+							<h2 class="request-form__title">Заявка на&nbsp;подбор тура</h2>
+							<div class="request-form__wrap">
+								<div class="custom-input">
+									<label
+										class="custom-input__label"
+										for="call"
+										>Телефон*</label
+									>
+									<input
+										class="custom-input__field"
+										type="tel"
+										id="call"
+										name="call"
+										placeholder="+7&nbsp;(ХХХ) ХХХ-ХХ-ХХ"
+										required
+									/>
+									<span class="custom-input__error">Некорректное значение</span>
+								</div>
+								<div class="custom-input">
+									<label
+										class="custom-input__label"
+										for="name"
+										>Имя</label
+									>
+									<input
+										class="custom-input__field"
+										type="text"
+										id="name"
+										name="name"
+									/>
+									<span class="custom-input__error">Некорректное значение</span>
+								</div>
+								<div class="custom-input">
+									<label
+										class="custom-input__label"
+										for="email"
+										>E-mail</label
+									>
+									<input
+										class="custom-input__field"
+										type="email"
+										id="email"
+										name="email"
+									/>
+									<span class="custom-input__error">Некорректное значение</span>
+								</div>
+								<div class="custom-textarea">
+									<label
+										class="custom-textarea__label"
+										for="message"
+										>Комментарий</label
+									>
+									<textarea
+										class="custom-textarea__field"
+										name="message"
+										id="message"
+									></textarea>
+								</div>
+							</div>
+							<button
+								class="request-form__btn btn btn--bg-lilac"
+								type="submit"
+							>
+								Оставить заявку
+							</button>
+							<span class="request-form__agree"
+								>Нажимая кнопку &laquo;Оставить заявку&raquo;,
+								вы&nbsp;соглашаетесь с&nbsp;условиями сервиса</span
+							>
+							<svg
+								class="request-form__icon-case"
+								width="72"
+								height="134"
+								aria-hidden="true"
+							>
+								<use xlink:href="images/sprite.svg#case"></use>
+							</svg>
+							<svg
+								class="request-form__icon-aircraft"
+								width="236"
+								height="74"
+								aria-hidden="true"
+							>
+								<use xlink:href="images/sprite.svg#aircraft"></use>
+							</svg>
+						</form>
+					</div>
+
+					<div class="modal__success-wrap">
+						<div class="success">
+							<svg
+								class="success__icon"
+								width="60"
+								height="60"
+								aria-hidden="true"
+							>
+								<use xlink:href="images/sprite.svg#confetti"></use>
+							</svg>
+							<svg
+								class="success__icon success__icon--reversed"
+								width="60"
+								height="60"
+								aria-hidden="true"
+							>
+								<use xlink:href="images/sprite.svg#confetti"></use>
+							</svg>
+							<strong class="success__heading">Спасибо!</strong>
+							<span class="success__text"
+								>Мы&nbsp;получили ваш запрос и&nbsp;скоро свяжемся
+								с&nbsp;вами.</span
+							>
+							<button
+								class="btn success__btn"
+								type="button"
+							>
+								Хорошо
+							</button>
+						</div>
+					</div>
+
 					<button
 						class="modal__close-btn"
 						aria-label="Закрыть форму"

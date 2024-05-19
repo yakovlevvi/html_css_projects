@@ -64,6 +64,11 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+
+    &:hover, &:focus-visible {
+      color: $color-deep-lilac;
+      outline:none;
+    }
   }
 
   &__link-text {

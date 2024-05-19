@@ -9,7 +9,6 @@
 	"editor.suggestSelection": "first",
 	"editor.multiCursorModifier": "alt",
 	"files.autoSave": "afterDelay",
-	"window.zoomLevel": 0,
 
 	// Wrapping
 	"editor.wordWrap": "bounded",
@@ -33,14 +32,10 @@
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 
 	"editor.quickSuggestionsDelay": 0,
-	// "html.completion.attributeDefaultValue": "singlequotes",
 
 	//Appearance
-	// "editor.bracketPairColorization.enabled": false,
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
-	// "editor.scrollbar.vertical": "hidden",
-	// "window.density.editorTabHeight": "compact",
 	"workbench.activityBar.location": "top",
 	"editor.accessibilitySupport": "off",
 	"window.commandCenter": false,
@@ -55,49 +50,10 @@
 	// Font
 	"editor.fontSize": 16,
 	"editor.fontLigatures": true,
-	"editor.fontFamily": "JetBrains Mono, Iosevka, iA Writer Mono S",
-	// "editor.inlayHints.fontFamily": "PragmataPro",
-
-	// "editor.tokenColorCustomizations": {
-	// 	"textMateRules": [
-	// 		{
-	// 			"scope": [
-	// 				//following will be in italic
-	// 				"comment",
-	// 				"entity.name.type.class", //class names
-	// 				"keyword", //import, export, return…
-	// 				"constant", //String, Number, Boolean…, this, super
-	// 				"storage.modifier", //static keyword
-	// 				"storage.type.class.js" //class keyword
-	// 			],
-	// 			"settings": {
-	// 				"fontStyle": "italic"
-	// 			}
-	// 		},
-	// 		{
-	// 			"scope": [
-	// 				//following will be excluded from italics (VSCode has some defaults for italics)
-	// 				"invalid",
-	// 				"keyword.operator",
-	// 				"constant.numeric.css",
-	// 				"keyword.other.unit.px.css",
-	// 				"constant.numeric.decimal.js",
-	// 				"constant.numeric.json"
-	// 			],
-	// 			"settings": {
-	// 				"fontStyle": ""
-	// 			}
-	// 		}
-	// 	]
-	// },
-
-	// Terminal
-	// "terminal.integrated.fontFamily": "Iosevka NFM",
-	// "terminal.integrated.fontSize": 12,
-	"terminal.integrated.tabs.enabled": false,
+	"editor.fontFamily": "JetBrains Mono, iA Writer Mono S",
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
 
 	// Explorer
 	"explorer.confirmDelete": false,
@@ -118,18 +74,15 @@
 	"debug.autoExpandLazyVariables": true,
 
 	// Emmet
-	// "emmet.includeLanguages": {
-	// 	"blade": "html",
-	// 	"javascript": "javascriptreact"
-	// },
-	// "emmet.triggerExpansionOnTab": true,
+	"emmet.includeLanguages": {
+		"blade": "html",
+		"javascript": "javascriptreact"
+	},
+	"emmet.triggerExpansionOnTab": true,
 
 	// Format
 	"editor.formatOnPaste": true,
-	// "editor.defaultFormatter": "esbenp.prettier-vscode",
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
-	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[svg]": {
 		"editor.defaultFormatter": "jock.svg"
 	},
@@ -138,16 +91,11 @@
 	},
 	"prettier.useTabs": true,
 	"prettier.semi": false,
-	"prettier.jsxSingleQuote": true,
 	"prettier.singleQuote": true,
-	"prettier.arrowParens": "avoid",
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
 	},
-
-	//Включите круглые скобки вокруг единственного параметра функции стрелки
-	"editor.inlineSuggest.enabled": true,
 
 	//Breadcrumbs
 	"breadcrumbs.icons": false,
@@ -176,7 +124,7 @@
 
 	//Spell checker
 	"cSpell.language": "en,ru",
-	"cSpell.userWords": ["автозаполнения", "Промиса"],
+	"cSpell.userWords": ["Vitaliy", "автозаполнения", "Промиса"],
 	"cSpell.enabled": true,
 	"cSpell.enableFiletypes": [
 		"blade",
@@ -236,27 +184,6 @@
 	"git.confirmSync": false,
 	"liveServer.settings.donotShowInfoMsg": true,
 
-	"workbench.colorCustomizations": {
-		"[Monokai]": {
-			"editor.background": "#000",
-			"editorGutter.background": "#111",
-			"sideBar.background": "#000",
-			"statusBar.background": "#111",
-			"editor.selectionBackground": "#222",
-			"editor.lineHighlightBackground": "#333",
-			"tab.activeBackground": "#111",
-			"tab.inactiveBackground": "#222"
-		},
-
-		"[One Monokai]": {
-			"editor.background": "#111",
-			"editorGutter.background": "#1a1a1a",
-			"sideBar.background": "#111",
-			"statusBar.background": "#222",
-			"tab.activeBackground": "#111",
-			"tab.inactiveBackground": "#2c2c2c"
-		}
-	},
 	"workbench.colorTheme": "Bearded Theme Monokai Metallian",
 	"window.customTitleBarVisibility": "auto",
 	"[jsonc]": {
@@ -282,5 +209,6 @@
 			"savePathReplacementPairs": null
 		}
 	],
-	"liveSassCompile.settings.showOutputWindowOn": "None"
+	"liveSassCompile.settings.showOutputWindowOn": "None",
+	"prettier.singleAttributePerLine": true
 }
