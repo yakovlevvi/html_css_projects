@@ -1164,11 +1164,6 @@
 							<h2 class="request-form__title">Заявка на&nbsp;подбор тура</h2>
 							<div class="request-form__wrap">
 								<div class="custom-input">
-									<label
-										class="custom-input__label"
-										for="call"
-										>Телефон*</label
-									>
 									<input
 										class="custom-input__field"
 										type="tel"
@@ -1176,35 +1171,41 @@
 										name="call"
 										placeholder="+7&nbsp;(ХХХ) ХХХ-ХХ-ХХ"
 										required
+										disabled
 									/>
+									<label
+										class="custom-input__label"
+										for="call"
+										>Телефон*</label
+									>
 									<span class="custom-input__error">Некорректное значение</span>
 								</div>
 								<div class="custom-input">
+									<input
+									class="custom-input__field"
+									type="text"
+									id="name"
+									name="name"
+									/>
 									<label
 										class="custom-input__label"
 										for="name"
 										>Имя</label
 									>
-									<input
-										class="custom-input__field"
-										type="text"
-										id="name"
-										name="name"
-									/>
 									<span class="custom-input__error">Некорректное значение</span>
 								</div>
 								<div class="custom-input">
+									<input
+									class="custom-input__field"
+									type="email"
+									id="email"
+									name="email"
+									/>
 									<label
 										class="custom-input__label"
 										for="email"
 										>E-mail</label
 									>
-									<input
-										class="custom-input__field"
-										type="email"
-										id="email"
-										name="email"
-									/>
 									<span class="custom-input__error">Некорректное значение</span>
 								</div>
 								<div class="custom-textarea">
