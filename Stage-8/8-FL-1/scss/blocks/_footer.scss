@@ -114,6 +114,11 @@
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 18px;
+
+		&:hover, &:focus-visible {
+			color: $color-moon-mist;
+			outline:none;
+		}
 	}
 
 	&__contacts {
@@ -133,6 +138,13 @@
 		font-size: 14px;
 		line-height: 18px;
 		font-style: normal;
+	}
+
+	&__tel {
+		&:hover, &:focus-visible {
+			color: $color-moon-mist;
+			outline:none;
+		}
 	}
 
 	&__info {
@@ -174,6 +186,13 @@
 		@include vp-767 {
 			font-size: 10px;
 			line-height: 12px;
+		}
+
+		&:not(span) {
+			&:hover, &:focus-visible {
+				color: $color-bokara-grey;
+				outline:none;
+			}
 		}
 	}
 }

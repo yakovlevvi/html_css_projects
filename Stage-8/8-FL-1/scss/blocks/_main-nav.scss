@@ -1,6 +1,13 @@
 .main-nav {
 	&__burger {
 		display: none;
+		cursor: pointer;
+		position: relative;
+
+		&:hover, &:focus-visible {
+			color: $color-grayish-orange;
+			outline:none;
+		}
 
 		@include vp-1023 {
 			display: flex;
@@ -10,6 +17,16 @@
 			margin: 0;
 			justify-content: center;
 			align-items: center;
+		}
+
+		&::after {
+			content: "";
+			width: 50px;
+			height: 40px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 	&__list {
@@ -33,5 +50,10 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: $color-bokara-grey;
+
+		&:hover, &:focus-visible {
+			color: $color-grayish-orange;
+			outline:none;
+		}
 	}
 }

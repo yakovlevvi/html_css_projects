@@ -14,5 +14,11 @@
 			width: 20px;
 			height: 20px;
 		}
+
+		&:hover, &:focus-visible {
+			color: $color-moon-mist;
+			outline:none;
+		}
+
 	}
 }
