@@ -16,16 +16,10 @@
 		@include vp-767 {
 			gap: 15px;
 		}
-
-		@media (max-width: 370px) {
-			gap: 12px;
-		}
 	}
 
-	&__item {
-		&:last-child {
-			overflow: hidden;
-		}
+	&__item:last-child {
+		overflow: hidden;
 	}
 
 	&__link {
@@ -36,9 +30,10 @@
 		display: flex;
 		position: relative;
 
-		&:hover, &:focus-visible {
+		&:hover,
+		&:focus-visible {
 			color: $color-grayish-orange;
-			outline:none;
+			outline: none;
 		}
 
 		@include vp-767 {
@@ -47,7 +42,7 @@
 		}
 
 		&:not(span)::after {
-			content: "/";
+			content: '/';
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);

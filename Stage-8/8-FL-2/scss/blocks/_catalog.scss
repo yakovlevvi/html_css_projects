@@ -1,0 +1,102 @@
+.catalog {
+	padding: 20px 0;
+
+	&__title {
+		font-weight: 400;
+		font-size: 56px;
+		line-height: 56px;
+		letter-spacing: -0.04em;
+		margin: 0 0 40px;
+	}
+
+	&__menu {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 40px;
+	}
+
+	&__filter-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	&__filter-btn {
+		border: none;
+		background-color: $color-light-grayish-red;
+		padding: 10px 15px;
+		border-radius: 60px;
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 500;
+	}
+
+	&__sort-wrap {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__sort-text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	&__sort-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__sort-btn {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		cursor: pointer;
+
+		&--active {
+			color: $color-cloudy;
+			pointer-events: none;
+		}
+	}
+
+	&__sort-icon {
+		&--rotated {
+			transform: rotate(0.5turn);
+		}
+	}
+
+	&__menu-btn {
+		border: none;
+		background-color: $color-light-grayish-yellow;
+		padding: 12px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: none;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px;
+	}
+}

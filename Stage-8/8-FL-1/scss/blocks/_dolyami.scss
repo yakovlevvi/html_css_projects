@@ -1,5 +1,6 @@
 .dolyami {
-	display: flex;
+	display: grid;
+	grid-template-columns: 68px auto auto;
 	align-items: center;
 	gap: 10px;
 	max-width: 320px;

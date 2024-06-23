@@ -1,5 +1,5 @@
 .hot-news {
-  overflow: hidden;
+  overflow: hidden;  //! Убирает горизонтальный скролл на desktop
   margin: 0 0 37px;
 
   @include vp-1023 {

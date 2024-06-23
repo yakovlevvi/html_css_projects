@@ -136,6 +136,7 @@
 		list-style: none;
 		display: flex;
 		gap: 12px;
+		flex-wrap: wrap;
 		align-items: center;
 		margin: 0 0 48px;
 
@@ -156,7 +157,7 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		background-color: #ccc;
+		background-color: $color-gray;
 		border: none;
 		cursor: pointer;
 		position: relative;
@@ -182,6 +183,16 @@
 			background-color: $color-bokara-grey;
 		}
 
+		&:hover, &:focus-visible {
+			outline:none;
+		}
+
+		&:hover::after, &:focus-visible::after {
+			display: block;
+			border-color: $color-moon-mist;
+			outline:none;
+		}
+
 		&::after {
 			content: "";
 			width: 48px;
@@ -200,19 +211,15 @@
 			}
 		}
 
+		&--active {
+			pointer-events: none;
+		}
+
 		&--active::after {
 			display: block;
 		}
 
-		&:hover, &:focus-visible {
-			outline:none;
-		}
-
-		&:hover::after, &:focus-visible::after {
-			display: block;
-			border-color: $color-moon-mist;
-			outline:none;
-		}
+		
 	}
 
 	&__btn-wrap {
@@ -236,6 +243,7 @@
 		&--active {
 			background-color: $color-green-white;
 			color: $color-bokara-grey;
+			pointer-events: none;
 		}
 	}
 
@@ -271,6 +279,10 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			display: none;
+		}
+
+		&--active {
+			pointer-events: none;
 		}
 
 		&--active::after {

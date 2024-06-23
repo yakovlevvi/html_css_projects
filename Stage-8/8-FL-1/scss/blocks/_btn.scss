@@ -20,7 +20,7 @@
 		background-color: $color-bokara-grey;
 		color: $color-white;
 		padding: 18px;
-		min-width: 420px;
+		width: 420px;
 
 		&:hover, &:focus-visible {
 			background-color: $color-green-white;
@@ -30,7 +30,12 @@
 
 		@media (max-width: 1400px) {
 			padding: 12px 18px;
-			min-width: unset;
+			width: 320px;
+		}
+
+		@media (max-width: 1100px) {
+			padding: 12px 18px;
+			width: 220px;
 		}
 
 		@include vp-1023 {
@@ -50,6 +55,7 @@
 		&:hover, &:focus-visible {
 			color: $color-grayish-orange;
 			outline:none;
+			border-color: $color-grayish-orange;
 		}
 
 		@media (max-width: 1150px) {

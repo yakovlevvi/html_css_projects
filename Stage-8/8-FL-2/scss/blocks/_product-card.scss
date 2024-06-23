@@ -1,0 +1,146 @@
+.product-card {
+	position: relative;
+
+	&__img {
+		margin: 0 0 20px;
+	}
+
+	&__discount {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.04em;
+		padding: 10px 15px;
+		background-color: $color-hint-of-red;
+		border-radius: 60px;
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		margin: 0 0 6px;
+	}
+
+	&__color-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		flex-wrap: wrap;
+	}
+
+	&__color-btn {
+		width: 20px;
+		height: 20px;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&--light {
+			background-color: $color-light-grayish-orange;
+		}
+
+		&--dark-green {
+			background-color: $color-very-dark-grayish-yellow;
+		}
+
+		&--dark-cyan {
+			background-color: $color-dark-grayish-cyan;
+		}
+
+		&--dark-brown {
+			background-color: $color-very-dark-desaturated-orange;
+		}
+
+		&--orange {
+			background-color: $color-soft-orange;
+		}
+	}
+
+	&__category {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: $color-cloudy;
+		display: block;
+		margin: 0;
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 26px;
+		text-transform: uppercase;
+		display: block;
+		margin: 0 0 10px;
+	}
+
+	&__price-wrap {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 0 0 20px;
+	}
+
+	&__price {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__old-price {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: $color-cloudy;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 1px;
+			background-color: $color-cloudy;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+		}
+	}
+
+	&__btn-wrap {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+		flex-wrap: wrap;
+	}
+
+	&__cart-btn {
+		background-color: transparent;
+		border: 1px solid $color-swiss-coffee;
+		padding: 14px;
+		width: 260px;
+		cursor: pointer;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__like-btn {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+}
