@@ -1,12 +1,36 @@
 .catalog {
 	padding: 20px 0;
 
+	&__heading {
+		display: flex;
+		flex-direction: column;
+
+		@include vp-767 {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 0 20px;
+		}
+	}
+
 	&__title {
 		font-weight: 400;
 		font-size: 56px;
 		line-height: 56px;
 		letter-spacing: -0.04em;
 		margin: 0 0 40px;
+
+		@include vp-1023 {
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 25px;
+		}
+
+		@include vp-767 {
+			margin: 0;
+			font-size: 32px;
+			line-height: 36px;
+		}
 	}
 
 	&__menu {
@@ -15,6 +39,14 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: 0 0 40px;
+
+		@include vp-1023 {
+			margin-bottom: 24px;
+		}
+
+		@include vp-767 {
+			margin: 0;
+		}
 	}
 
 	&__filter-list {
@@ -24,23 +56,49 @@
 		display: flex;
 		gap: 10px;
 		flex-wrap: wrap;
+
+		@include vp-1023 {
+			gap: 5px;
+		}
+
+		@include vp-767 {
+			display: none;
+		}
 	}
 
 	&__filter-btn {
 		border: none;
 		background-color: $color-light-grayish-red;
-		padding: 10px 15px;
+		padding: 10px 16px;
 		border-radius: 60px;
 		cursor: pointer;
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: 500;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $color-light-grayish-yellow;
+			outline: none;
+		}
+
+		&--active {
+			display: none;
+		}
 	}
 
 	&__sort-wrap {
 		display: flex;
 		align-items: center;
 		gap: 20px;
+
+		@media (max-width: 1200px) {
+			display: none;
+		}
+
+		@include vp-1023 {
+			display: none;
+		}
 	}
 
 	&__sort-text {
@@ -68,6 +126,12 @@
 		gap: 4px;
 		cursor: pointer;
 
+		&:hover,
+		&:focus-visible {
+			color: $color-cloudy;
+			outline: none;
+		}
+
 		&--active {
 			color: $color-cloudy;
 			pointer-events: none;
@@ -89,6 +153,25 @@
 		align-items: center;
 		justify-content: center;
 		display: none;
+
+		@media (max-width: 1200px) {
+			display: flex;
+		}
+
+		@include vp-1023 {
+			display: flex;
+		}
+
+		@include vp-767 {
+			padding: 10px;
+		}
+	}
+
+	&__menu-icon {
+		@include vp-767 {
+			width: 20px;
+			height: 20px;
+		}
 	}
 
 	&__list {
@@ -98,5 +181,19 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 40px;
+
+		@media (max-width: 1200px) {
+			gap: 20px;
+		}
+
+		@include vp-1023 {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 40px 30px;
+		}
+
+		@include vp-767 {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px 10px;
+		}
 	}
 }

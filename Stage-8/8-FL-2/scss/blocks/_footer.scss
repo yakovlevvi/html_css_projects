@@ -113,6 +113,7 @@
     &:hover,
     &:focus-visible {
       color: $color-cloudy;
+      outline: none;
     }
   }
 
@@ -168,6 +169,7 @@
     &:hover,
     &:focus-visible {
       color: $color-cloudy;
+      outline: none;
     }
   }
 
@@ -222,6 +224,11 @@
     line-height: 16px;
     color: $color-bokara-grey-40;
     text-align: center;
+
+    &:hover, &:focus-visible {
+      color: $color-bokara-grey;
+      outline:none;
+    }
 
     @include vp-1023 {
       max-width: 600px;

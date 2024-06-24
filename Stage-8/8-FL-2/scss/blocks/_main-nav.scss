@@ -25,6 +25,7 @@
 		&:hover,
 		&:focus-visible {
 			color: $color-cloudy;
+			outline: none;
 		}
 	}
 }

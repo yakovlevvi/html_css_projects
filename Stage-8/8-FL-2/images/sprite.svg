@@ -97,7 +97,7 @@
       fill="currentColor" />
   </symbol>
   <symbol id="logo-dolyami" viewBox="0 0 68 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="68" height="20" rx="4" fill="#141211" />
+    <rect width="68" height="20" rx="4" fill="currentColor" />
     <g clip-path="url(#clip0_1043_13)">
       <path d="M15.9392 6H14.6044V12.7689H15.9392V6Z" fill="white" />
       <path d="M13.0711 6.37876H11.7363V13.1475H13.0711V6.37876Z" fill="white" />
