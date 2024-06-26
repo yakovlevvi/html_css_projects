@@ -120,7 +120,13 @@
     padding: 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
     transform: translate3d(-50%, -50%, 0);
+
+    &:hover, &:focus-visible {
+      color: $color-moon-mist;
+      outline:none;
+    }
 
     @include vp-1023 {
       display: block;

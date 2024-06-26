@@ -572,7 +572,12 @@ a {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   transform: translate3d(-50%, -50%, 0);
+}
+.header__burger:hover, .header__burger:focus-visible {
+  color: #c8c8b6;
+  outline: none;
 }
 @media (max-width: 1023px) {
   .header__burger {
@@ -1111,6 +1116,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   display: none;
 }
 @media (max-width: 1200px) {
@@ -1310,7 +1316,7 @@ a {
   line-height: 16px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;

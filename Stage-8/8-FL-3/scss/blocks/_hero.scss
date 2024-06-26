@@ -1,0 +1,130 @@
+.hero {
+	width: 100%;
+	aspect-ratio: 1920 / 828;
+	background: $color-cloudy url("../../images/hero-bg.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+
+	@include vp-1023 {
+		aspect-ratio: 768 / 548;
+		background-image: url("../../images/hero-bg-tablet.jpg");
+	}
+
+	@include vp-767 {
+		aspect-ratio: 414 / 340;
+		background-image: url("../../images/hero-bg-mobile.jpg");
+	}
+
+	&__add-btn {
+		border: none;
+		background-color: $color-hint-of-red;
+		border-radius: 50%;
+		padding: 22px;
+		color: $color-bokara-grey;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+
+		@media (max-width: 1450px) {
+			padding: 15px;
+		}
+
+		@include vp-1023 {
+			padding: 16px;
+		}
+
+		@include vp-767 {
+			padding: 12px;
+		}
+
+		@media (max-width: 400px) {
+			padding: 8px;
+		}
+
+		&--mirror {
+			top: 14%;
+			right: 39.5%;
+
+			@include vp-1023 {
+				top: 15%;
+				right: 35.7%;
+			}
+
+			@include vp-767 {
+				top: 30%;
+				right: 32%;
+			}
+		}
+
+		&--chair {
+			bottom: 15%;
+			left: 17.5%;
+
+			@include vp-1023 {
+				bottom: 29.7%;
+				left: 8%;
+			}
+
+			@include vp-767 {
+				bottom: 23.5%;
+				left: 10%;
+			}
+		}
+
+		&--vase {
+			bottom: 17.6%;
+			right: 46.7%;
+
+			@include vp-1023 {
+				bottom: 30.5%;
+				right: 45.8%;
+			}
+
+			@include vp-767 {
+				bottom: 25.3%;
+				right: 41.3%;
+			}
+		}
+
+		&--sofa {
+			bottom: 21%;
+			right: 27.7%;
+
+			@include vp-1023 {
+				bottom: 31.75%;
+				right: 21.2%;
+			}
+
+			@include vp-767 {
+				bottom: 25.3%;
+				right: 17%;
+			}
+		}
+	}
+
+	&__add-icon {
+		flex-shrink: 0;
+
+		@media (max-width: 1450px) {
+			width: 15px;
+			height: 15px;
+		}
+
+		@include vp-1023 {
+			width: 15px;
+			height: 15px;
+		}
+
+		@include vp-767 {
+			width: 12px;
+			height: 12px;
+		}
+
+		@media (max-width: 400px) {
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
