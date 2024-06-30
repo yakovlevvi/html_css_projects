@@ -74,26 +74,271 @@
   </header>
   <main>
     <section class="hero">
-      <button class="hero__add-btn hero__add-btn--mirror" type="button">
+      <button class="add-btn hero__add-btn hero__add-btn--mirror" type="button">
         <svg class="hero__add-icon" width="20" height="20" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-plus"></use>
         </svg>
       </button>
-      <button class="hero__add-btn hero__add-btn--chair" type="button">
+      <button class="add-btn hero__add-btn hero__add-btn--chair" type="button">
         <svg class="hero__add-icon" width="20" height="20" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-plus"></use>
         </svg>
       </button>
-      <button class="hero__add-btn hero__add-btn--vase" type="button">
+      <button class="add-btn hero__add-btn hero__add-btn--vase" type="button">
         <svg class="hero__add-icon" width="20" height="20" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-plus"></use>
         </svg>
       </button>
-      <button class="hero__add-btn hero__add-btn--sofa" type="button">
+      <button class="add-btn hero__add-btn hero__add-btn--sofa" type="button">
         <svg class="hero__add-icon" width="20" height="20" aria-hidden="true">
           <use xlink:href="images/sprite.svg#icon-plus"></use>
         </svg>
       </button>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__wrapper">
+          <div class="comfort">
+            <ul class="comfort__gallery-list">
+              <li class="comfort__gallery-item comfort__gallery-item--size-l">
+                <figure class="comfort__figure">
+                  <picture class="comfort__picture">
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog-img-1-mobile.jpg 1x, images/catalog-img-1-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/catalog-img-1-tablet.jpg 1x, images/catalog-img-1-tablet@2x.jpg 2x">
+                    <img class="comfort__img" src="images/catalog-img-1.jpg" srcset="images/catalog-img-1@2x.jpg 2x"
+                      width="321" height="465" alt="Фото из каталога">
+                  </picture>
+                  <figcaption class="comfort__figcaption">Уют для дома</figcaption>
+                </figure>
+              </li>
+              <li class="comfort__gallery-item">
+                <figure class="comfort__figure">
+                  <picture class="comfort__picture">
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog-img-2-mobile.jpg 1x, images/catalog-img-2-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/catalog-img-2-tablet.jpg 1x, images/catalog-img-2-tablet@2x.jpg 2x">
+                    <img class="comfort__img" src="images/catalog-img-2.jpg" srcset="images/catalog-img-2@2x.jpg 2x"
+                      width="320" height="228" alt="Фото из каталога">
+                  </picture>
+                  <figcaption class="comfort__figcaption">Декор для дома</figcaption>
+                </figure>
+              </li>
+              <li class="comfort__gallery-item">
+                <figure class="comfort__figure">
+                  <picture class="comfort__picture">
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog-img-3-mobile.jpg 1x, images/catalog-img-3-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/catalog-img-3-tablet.jpg 1x, images/catalog-img-3-tablet@2x.jpg 2x">
+                    <img class="comfort__img" src="images/catalog-img-3.jpg" srcset="images/catalog-img-3@2x.jpg 2x"
+                      width="320" height="228" alt="Фото из каталога">
+                  </picture>
+                  <figcaption class="comfort__figcaption">Мебель для животных</figcaption>
+                </figure>
+              </li>
+            </ul>
+            <div class="comfort__inner">
+              <h2 class="comfort__title">Комфортабельный</h2>
+              <p class="comfort__description">Houzzy&nbsp;&mdash; это место, где каждая деталь создана с&nbsp;любовью
+                и&nbsp;заботой, чтобы принести тепло и&nbsp;уют
+                в&nbsp;ваш дом. Мы&nbsp;уверены, что красивая и&nbsp;комфортабельная мебель способна создавать особенную
+                атмосферу,
+                наполнять пространство гармонией и&nbsp;радостью. У&nbsp;нас только лучшее качество мебели, которое
+                прослужит долгие
+                годы и&nbsp;будет приносить радость и&nbsp;удовольствие каждый день. Мы&nbsp;заботимся о&nbsp;каждом
+                покупателе.</p>
+              <a class="comfort__link" href="#">Перейти в&nbsp;каталог</a>
+            </div>
+          </div>
+          <div class="cosy">
+            <div class="cosy__inner">
+              <h2 class="cosy__title">Уютный</h2>
+              <span class="cosy__text">для вашего дома</span>
+            </div>
+            <a class="cosy__link" href="#">Подробнее</a>
+          </div>
+          <div class="popular">
+            <h2 class="popular__title">Популярный</h2>
+            <ul class="popular__list">
+              <li class="popular__item">
+                <figure class="popular__figure">
+                  <picture class="popular__picture">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/popular-img-1-tablet.jpg 1x, images/popular-img-1-tablet@2x.jpg 2x">
+                    <img class="popular__img" src="images/popular-img-1.jpg" srcset="images/popular-img-1@2x.jpg 2x"
+                      width="338" height="280" alt="Фото категории">
+                  </picture>
+                  <figcaption class="popular__figcaption">Диваны</figcaption>
+                </figure>
+              </li>
+              <li class="popular__item">
+                <figure class="popular__figure">
+                  <picture class="popular__picture">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/popular-img-2-tablet.jpg 1x, images/popular-img-2-tablet@2x.jpg 2x">
+                    <img class="popular__img" src="images/popular-img-2.jpg" srcset="images/popular-img-2@2x.jpg 2x"
+                      width="338" height="280" alt="Фото категории">
+                  </picture>
+                  <figcaption class="popular__figcaption">Столы</figcaption>
+                </figure>
+              </li>
+              <li class="popular__item">
+                <figure class="popular__figure">
+                  <picture class="popular__picture">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/popular-img-3-tablet.jpg 1x, images/popular-img-3-tablet@2x.jpg 2x">
+                    <img class="popular__img" src="images/popular-img-3.jpg" srcset="images/popular-img-3@2x.jpg 2x"
+                      width="338" height="280" alt="Фото категории">
+                  </picture>
+                  <figcaption class="popular__figcaption">Стулья</figcaption>
+                </figure>
+              </li>
+              <li class="popular__item">
+                <figure class="popular__figure">
+                  <picture class="popular__picture">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/popular-img-4-tablet.jpg 1x, images/popular-img-4-tablet@2x.jpg 2x">
+                    <img class="popular__img" src="images/popular-img-4.jpg" srcset="images/popular-img-4@2x.jpg 2x"
+                      width="338" height="280" alt="Фото категории">
+                  </picture>
+                  <figcaption class="popular__figcaption">Home&nbsp;Decor</figcaption>
+                </figure>
+              </li>
+              <li class="popular__item popular__item--flat">
+                <figure class="popular__figure">
+                  <picture class="popular__picture">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/popular-img-5-tablet.jpg 1x, images/popular-img-5-tablet@2x.jpg 2x">
+                    <img class="popular__img" src="images/popular-img-5.jpg" srcset="images/popular-img-5@2x.jpg 2x"
+                      width="692" height="240" alt="Фото категории">
+                  </picture>
+                  <figcaption class="popular__figcaption">Кровати</figcaption>
+                </figure>
+              </li>
+              <li class="popular__item popular__item--flat">
+                <figure class="popular__figure">
+                  <picture class="popular__picture">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/popular-img-6-tablet.jpg 1x, images/popular-img-6-tablet@2x.jpg 2x">
+                    <img class="popular__img" src="images/popular-img-6.jpg" srcset="images/popular-img-6@2x.jpg 2x"
+                      width="692" height="240" alt="Фото категории">
+                  </picture>
+                  <figcaption class="popular__figcaption">Кресла</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="interrior">
+            <h2 class="interrior__title">Интерьерный</h2>
+            <div class="interrior__wrapper">
+              <picture class="interrior__picture">
+                <source media="(max-width: 767px)"
+                  srcset="images/interior-img-1-mobile.jpg 1x, images/interior-img-1-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="images/interior-img-1-tablet.jpg 1x, images/interior-img-1-tablet@2x.jpg 2x">
+                <img class="interrior__img" src="images/interior-img-1.jpg" srcset="images/interior-img-1@2x.jpg 2x"
+                  width="900" height="748" alt="Фото интерьера">
+                <button class="add-btn interrior__add-btn interrior__add-btn--chair">
+                  <svg class="interrior__add-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+                <button class="add-btn interrior__add-btn interrior__add-btn--vase">
+                  <svg class="interrior__add-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+                <button class="add-btn interrior__add-btn interrior__add-btn--case">
+                  <svg class="interrior__add-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+                <button class="add-btn interrior__add-btn interrior__add-btn--lamp">
+                  <svg class="interrior__add-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                </button>
+              </picture>
+              <ul class="interrior__list">
+                <li class="interrior__item">
+                  <a class="product-card" href="#">
+                    <picture class="interrior__product-picture">
+                      <source media="(max-width: 767px)"
+                        srcset="images/interrior-img-2-mobile.png 1x, images/interrior-img-2-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)"
+                        srcset="images/interrior-img-2-tablet.png 1x, images/interrior-img-2-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interrior-img-2.png"
+                        srcset="images/interrior-img-2@2x.png 2x" width="212" height="240" alt="Фото товара">
+                    </picture>
+                    <span class="product-card__name">Кресло wood</span>
+                    <span class="product-card__price">6&nbsp;150&nbsp;руб.</span>
+                    <span class="product-card__link">Подробнее</span>
+                  </a>
+                </li>
+                <li class="interrior__item">
+                  <a class="product-card" href="#">
+                    <picture class="interrior__product-picture">
+                      <source media="(max-width: 767px)"
+                        srcset="images/interrior-img-3-mobile.png 1x, images/interrior-img-3-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)"
+                        srcset="images/interrior-img-3-tablet.png 1x, images/interrior-img-3-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interrior-img-3.png"
+                        srcset="images/interrior-img-3@2x.png 2x" width="212" height="240" alt="Фото товара">
+                    </picture>
+                    <span class="product-card__name">торшер wood</span>
+                    <span class="product-card__price">1&nbsp;200&nbsp;руб.</span>
+                    <span class="product-card__link">Подробнее</span>
+                  </a>
+                </li>
+                <li class="interrior__item">
+                  <a class="product-card" href="#">
+                    <picture class="interrior__product-picture">
+                      <source media="(max-width: 767px)"
+                        srcset="images/interrior-img-4-mobile.png 1x, images/interrior-img-4-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)"
+                        srcset="images/interrior-img-4-tablet.png 1x, images/interrior-img-4-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interrior-img-4.png"
+                        srcset="images/interrior-img-4@2x.png 2x" width="212" height="240" alt="Фото товара">
+                    </picture>
+                    <span class="product-card__name">комод wood</span>
+                    <span class="product-card__price">4&nbsp;470&nbsp;руб.</span>
+                    <span class="product-card__link">Подробнее</span>
+                  </a>
+                </li>
+                <li class="interrior__item">
+                  <a class="product-card" href="#">
+                    <picture class="interrior__product-picture">
+                      <source media="(max-width: 767px)"
+                        srcset="images/interrior-img-5-mobile.png 1x, images/interrior-img-5-mobile@2x.png 2x">
+                      <source media="(max-width: 1023px)"
+                        srcset="images/interrior-img-5-tablet.png 1x, images/interrior-img-5-tablet@2x.png 2x">
+                      <img class="product-card__img" src="images/interrior-img-5.png"
+                        srcset="images/interrior-img-5@2x.png 2x" width="212" height="240" alt="Фото товара">
+                    </picture>
+                    <span class="product-card__name">тумба wood</span>
+                    <span class="product-card__price">2&nbsp;600&nbsp;руб.</span>
+                    <span class="product-card__link">Подробнее</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="help">
+      <div class="container">
+        <h2 class="help__title">Помощь в&nbsp;выборе товаров</h2>
+        <span class="help__text">Получите бесплатную консультацию менеджера</span>
+        <form class="help__form" action="#" method="post">
+          <div class="custom-input">
+            <input class="custom-input__field" type="text" id="name" name="name" placeholder="Имя">
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
