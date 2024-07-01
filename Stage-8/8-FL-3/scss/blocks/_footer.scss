@@ -234,5 +234,10 @@
       font-size: 10px;
       line-height: 12px;
     }
+
+    &:hover, &:focus-visible {
+      color: $color-bokara-grey;
+      outline:none;
+    }
   }
 }

@@ -26,6 +26,11 @@
 		padding: 8px;
 	}
 
+	&:hover, &:focus-visible {
+		background-color: $color-green-white;
+		outline:none;
+	}
+
 	svg {
 		flex-shrink: 0;
 
