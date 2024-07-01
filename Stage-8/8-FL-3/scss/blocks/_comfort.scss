@@ -166,21 +166,5 @@
 		}
 	}
 
-	&__link {
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 18px;
-		text-align: center;
-		padding: 21px;
-		min-width: 240px;
-		border: 1px solid $color-swiss-coffee;
-
-		@include vp-767 {
-			font-size: 12px;
-			line-height: 16px;
-			padding: 17px;
-			min-width: 200px;
-			margin: 0 auto;
-		}
-	}
+	
 }

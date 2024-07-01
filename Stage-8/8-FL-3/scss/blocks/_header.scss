@@ -7,6 +7,7 @@
   left: 0;
   z-index: 20;
   background-color: $color-hint-of-red;
+  $root: &;
 
   @include vp-1023 {
     padding: 18px 0 17px;
@@ -14,6 +15,22 @@
 
   @include vp-767 {
     padding: 14px 0 13px;
+  }
+
+  &--open {
+    @include vp-1023 {
+      #{$root}__burger-icon {
+        display: none;
+
+        &--close {
+          display: flex;
+        }
+      }
+
+      .main-nav {
+        display: flex;
+      }
+    }
   }
 
   &__content {
@@ -138,9 +155,16 @@
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
     width: 32px;
+    cursor: pointer;
 
     @include vp-1023 {
       display: block;
+    }
+  }
+
+  &__burger-icon {
+    &--close {
+      display: none;
     }
   }
 }

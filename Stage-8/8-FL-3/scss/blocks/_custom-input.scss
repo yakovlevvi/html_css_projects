@@ -1,0 +1,29 @@
+.custom-input {
+	width: 100%;
+	position: relative;
+
+	&__field {
+		border: 1px solid $color-bokara-grey-10;
+		width: 100%;
+		padding: 19px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 22px;
+		background-color: transparent;
+
+		@include vp-767 {
+			font-size: 14px;
+			line-height: 18px;
+			padding: 16px 19px;
+		}
+	}
+
+	&__label {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+		position: absolute;
+		left: 0;
+		top: -21px;
+	}
+}

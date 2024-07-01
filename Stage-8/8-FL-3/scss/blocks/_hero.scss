@@ -5,14 +5,29 @@
 	background-size: cover;
 	position: relative;
 
+	@media (min-resolution: 2dppx) {
+		background: url("../../images/hero-bg@2x.jpg") no-repeat center;
+		background-size: cover;
+	}
+
 	@include vp-1023 {
 		aspect-ratio: 768 / 548;
 		background-image: url("../../images/hero-bg-tablet.jpg");
 	}
 
+	@media (min-resolution: 2dppx) and (max-width: $vp-tablet) {
+		background: url("../images/hero-bg-tablet@2x.jpg") no-repeat center;
+		background-size: cover;
+	}
+
 	@include vp-767 {
 		aspect-ratio: 414 / 340;
 		background-image: url("../../images/hero-bg-mobile.jpg");
+	}
+
+	@media (min-resolution: 2dppx) and (max-width: $vp-mobile) {
+		background: url("../images/hero-bg-mobile@2x.jpg") no-repeat center;
+		background-size: cover;
 	}
 
 	&__add-btn {
