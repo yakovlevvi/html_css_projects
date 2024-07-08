@@ -1,0 +1,102 @@
+.governing {
+  margin: 0 0 100px;
+
+  @include vp-1023 {
+    margin: 0 0 60px;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    margin: 0 0 75px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 36px;
+      line-height: 40px;
+      margin: 0 0 50px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px;
+    padding: 0;
+    margin: 0 0 100px;
+    list-style: none;
+
+    @include vp-1023 {
+      gap: 30px 16px;
+      margin: 0 0 60px;
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__text-card {
+    background-color: $color-grey;
+    padding: 40px;
+    border-radius: 20px;
+    height: 580px;
+
+    @include vp-1023 {
+      padding: 20px;
+      height: 340px;
+    }
+  }
+
+  &__text-title {
+    font-size: 110px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+    font-weight: 300;
+    margin: 0 0 15px;
+
+    @include vp-1023 {
+      font-size: 70px;
+      line-height: 60px;
+    }
+  }
+
+  &__text-achievement {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid $color-iron;
+
+    @include vp-1023 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__text-description {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__slogan {
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 440px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.advantages {
+  margin: 0 0 80px;
+
+  @include vp-1023 {
+    margin: 0 0 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 80px;
+
+    @include vp-1023 {
+      gap: 50px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0 80px;
+    border-bottom: 1px solid $color-iron;
+
+    @include vp-1023 {
+      padding: 0 0 50px;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &:last-child {
+      @include vp-1023 {
+        padding: 0 0 33px;
+      }
+    }
+  }
+
+  &__inner {
+    max-width: 500px;
+    flex-shrink: 0;
+
+    @include vp-1023 {
+      max-width: unset;
+    }
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    font-weight: 200;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 40px 0 0 0;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &__sublist {
+    max-width: 600px;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    counter-reset: subitem;
+
+    @include vp-1023 {
+      max-width: unset;
+      columns: 3;
+      column-gap: 20px;
+    }
+  }
+
+  &__subitem {
+    counter-increment: subitem;
+    position: relative;
+    padding: 0 0 0 27px;
+    font-size: 18px;
+    line-height: 26px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 21px;
+    }
+
+    &::before {
+      content: counter(subitem)".";
+      position: absolute;
+      left: 6px;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 15px;
+
+      @include vp-1023 {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
