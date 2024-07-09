@@ -1288,6 +1288,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
+  pointer-events: none;
 }
 .product-card__angry-img {
   margin: 0 0 16px;
@@ -1319,6 +1320,9 @@ a {
 }
 .form-order--submit .product-card__angry-img {
   animation: spinningSmile 1s cubic-bezier(0.33, 0.69, 0.31, 1.45) 0.8s forwards;
+}
+.form-order--submit .product-card__success-wrap {
+  pointer-events: all;
 }
 .form-order--submit .product-card__success-slogan {
   animation: slideInDown ease-in 0.3s 2s forwards;

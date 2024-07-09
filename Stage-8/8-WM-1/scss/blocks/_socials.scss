@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     color: $color-trout;
+    transition: color $transition-300;
 
     &:hover,
     &:focus-visible {

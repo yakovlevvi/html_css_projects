@@ -8,7 +8,7 @@
 	min-height: 715px;
 	padding: 24px 40px 40px;
 	position: relative;
-  overflow: hidden;
+	overflow: hidden;
 	$root: &;
 
 	&--green {
@@ -144,7 +144,8 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-    z-index: 1;
+		z-index: 1;
+		pointer-events: none;
 	}
 
 	&__angry-img {
@@ -178,13 +179,17 @@
 			animation: slideOutDown $transition-300 forwards;
 		}
 
-    &__btn {
-      animation: backgroundGrow $transition-300 0.4s forwards;
-    }
+		&__btn {
+			animation: backgroundGrow $transition-300 0.4s forwards;
+		}
 
 		&__angry-img {
 			animation: spinningSmile 1s cubic-bezier(0.33, 0.69, 0.31, 1.45) 0.8s
 				forwards;
+		}
+
+		&__success-wrap {
+			pointer-events: all;
 		}
 
 		&__success-slogan {
@@ -238,10 +243,10 @@
 }
 
 @keyframes backgroundGrow {
-  0% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(2, 20);
-  }
+	0% {
+		transform: scale(1, 1);
+	}
+	100% {
+		transform: scale(2, 20);
+	}
 }

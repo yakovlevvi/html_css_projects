@@ -4,14 +4,31 @@
 	flex-direction: column;
 	width: 100%;
 
+	&:hover,
+	&:focus-visible {
+		.governing-card__icon {
+			background-color: $color-white;
+			svg {
+				color: $color-blue-charcoa;	
+			}
+		}
+
+		outline: none;
+	}
+
 	&__picture {
 		height: 580px;
 		position: relative;
 		margin: 0 0 15px;
 
 		@include vp-1023 {
-			height: 340px;
-      margin: 0 0 10px;
+			height: auto;
+			aspect-ratio: 232 / 340;
+			margin: 0 0 10px;
+		}
+
+		@include vp-767 {
+			aspect-ratio: 160 /240;
 		}
 
 		img {
@@ -32,17 +49,31 @@
 		bottom: 20px;
 		right: 20px;
 		color: $color-white;
+		transition: background-color $transition-300;
 
 		@include vp-1023 {
 			width: 48px;
 			height: 48px;
-      bottom: 15px;
-      right: 15px;
+			bottom: 15px;
+			right: 15px;
 		}
+
+		@include vp-767 {
+			width: 40px;
+			height: 40px;
+			right: 10px;
+			bottom: 10px;
+		}
+
 		& svg {
+			transition: color $transition-300;
 			@include vp-1023 {
 				width: 18px;
-				height: 18;
+				height: 18px;
+			}
+			@include vp-767 {
+				width: 15px;
+				height: 15px;
 			}
 		}
 	}
