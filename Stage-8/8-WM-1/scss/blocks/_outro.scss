@@ -4,9 +4,10 @@
 	padding: 108px 0;
 	position: relative;
 	background-position-y: 0;
+	$root: &;
 
 	@media (min-resolution: 2dppx) {
-		background: url('../images/vacancy-bg@2x.jpg') no-repeat center;
+	background: url('../images/vacancy-bg@2x.jpg') no-repeat center;
 		background-size: cover;
 		background-position-y: 0;
 	}
@@ -69,7 +70,7 @@
 
 		&:hover,
 		&:focus-visible {
-			.outro__link-icon {
+			#{$root}__link-icon {
 				background-color: $color-blue-charcoa;
 				color: $color-white;
 			}

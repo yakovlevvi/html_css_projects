@@ -1,0 +1,20 @@
+.outro {
+	background: url('../../images/outro-bg.jpg') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	background-position-y: 100%;
+
+	@media (min-resolution: 2ppx) {
+		background-image: url('../../images/outro-bg@2x.jpg');
+	}
+
+	@include vp-1023 {
+		height: 280px;
+		background-image: url('../../images/outro-bg-tablet.jpg');
+
+		@media (min-resolution: 2ppx) {
+			background-image: url('../../images/outro-bg-tablet@2x.jpg');
+		}
+	}
+}

@@ -1,0 +1,154 @@
+.intro {
+	padding: 119px 0;
+
+	@include vp-1023 {
+		padding: 80px 0;
+		max-width: 572px;
+		margin: 0 auto;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 120px;
+		align-items: center;
+
+		@include vp-1023 {
+			gap: 80px;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		@include vp-1023 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&__item {
+		&:last-child {
+			@include vp-1023 {
+				display: none;
+			}
+		}
+	}
+
+	&__img {
+		border-radius: 0 0 600px 600px;
+		height: 100%;
+	}
+
+	&__card {
+		border: 1px solid $color-fallow;
+		border-bottom: none;
+		border-radius: 600px 600px 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: $color-fallow;
+		height: 100%;
+		padding: 30px;
+
+		@include vp-1023 {
+			padding: 20px;
+		}
+	}
+
+	&__icon {
+		margin: 0 0 30px;
+
+		@include vp-1023 {
+			width: 70px;
+			height: 94px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__note {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		margin: 0 0 10px;
+
+		@include vp-1023 {
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__name {
+		font-family: $ff-tenor;
+		font-weight: 400;
+		font-size: 44px;
+		line-height: 50px;
+		letter-spacing: -0.08em;
+		margin: 0;
+		text-align: center;
+		color: $color-white;
+		margin: 0 0 40px;
+
+		@include vp-1023 {
+			font-size: 28px;
+			line-height: 32px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__address {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+
+		@include vp-1023 {
+			gap: 10px;
+		}
+	}
+
+	&__address-icon {
+		@include vp-1023 {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__address-text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0;
+		color: $color-white;
+
+		@include vp-1023 {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__description {
+		font-family: $ff-tenor;
+		font-weight: 400;
+		font-size: 34px;
+		line-height: 44px;
+		letter-spacing: -0.08em;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-fallow;
+		margin: 0;
+
+		@include vp-1023 {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+}

@@ -1,5 +1,6 @@
 .main-video {
   margin: 0 0 100px;
+  $root: &;
 
   @include vp-1023 {
     margin-bottom: 60px;
@@ -29,7 +30,7 @@
     cursor: pointer;
 
     &:hover, &:focus-visible {
-      .main-video__play-icon {
+      #{$root}__play-icon {
         background-color: $color-grey;
       }
       outline:none;
