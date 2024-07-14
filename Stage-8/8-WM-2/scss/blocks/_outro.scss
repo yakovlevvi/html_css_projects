@@ -17,4 +17,8 @@
 			background-image: url('../../images/outro-bg-tablet@2x.jpg');
 		}
 	}
+
+	@include vp-767 {
+		height: 200px;
+	}
 }
