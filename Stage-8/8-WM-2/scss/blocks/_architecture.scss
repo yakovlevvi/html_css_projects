@@ -1,6 +1,7 @@
 .architecture {
 	padding: 0 0 120px;
 	$root: &;
+	overflow: hidden;
 
 	@include vp-1023 {
 		padding: 0 0 80px;
@@ -19,6 +20,11 @@
 		align-items: center;
 		margin: 0 0 40px;
 
+		@media (max-width: 1300px) {
+			gap: 50px;
+			margin: 0 0 20px;
+		}
+
 		@include vp-1023 {
 			gap: 19px;
 			margin-bottom: 20px;
@@ -28,6 +34,9 @@
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 40px;
+			max-width: 295px;
+			margin: 0 auto 40px;
+			gap: 14px;
 		}
 	}
 
@@ -55,14 +64,32 @@
 
 		@include vp-767 {
 			display: flex;
-			flex-wrap: nowrap;
 			overflow: auto;
 			gap: 10px;
+			margin: 0 -20px;
+			padding: 0 20px;
+			justify-content: center;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		@media (max-width: 550px) {
+			justify-content: start;
 		}
 	}
 
 	&__item {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include vp-767 {
+			width: 160px;
+			flex-shrink: 0;
+		}
 
 		&--reversed {
 			#{$root}__img {
@@ -98,6 +125,11 @@
 				font-size: 24px;
 				line-height: 30px;
 			}
+
+			@include vp-767 {
+				font-size: 20px;
+				line-height: 24px;
+			}
 		}
 	}
 
@@ -106,7 +138,12 @@
 		margin: 0 0 20px;
 
 		@include vp-1023 {
-			min-height: 410px;
+			height: 410px;
+		}
+
+		@include vp-767 {
+			width: 160px;
+			height: 285px;
 		}
 	}
 
@@ -124,6 +161,11 @@
 		@include vp-1023 {
 			font-size: 14px;
 			line-height: 18px;
+		}
+
+		@include vp-767 {
+			font-size: 12px;
+			line-height: 16px;
 		}
 	}
 }

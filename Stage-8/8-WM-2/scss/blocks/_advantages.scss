@@ -7,7 +7,7 @@
 	}
 
 	@include vp-767 {
-		padding: 60px 0 120px;
+		padding: 60px 0 110px;
 	}
 
 	&__wrapper {
@@ -24,11 +24,11 @@
 		@include vp-1023 {
 			display: flex;
 			flex-direction: column;
-			gap: 80px;
+			gap: 40px;
 		}
 
 		@include vp-767 {
-			gap: 120px;
+			gap: 110px;
 		}
 	}
 
@@ -39,6 +39,10 @@
 
 		@include vp-1023 {
 			gap: 20px;
+		}
+
+		@include vp-767 {
+			gap: 15px;
 		}
 	}
 
@@ -62,7 +66,8 @@
 		column-gap: 28px;
 
 		@include vp-1023 {
-			column-gap: 74px;
+			column-gap: 60px;
+			min-height: 280px;
 		}
 
 		@include vp-767 {
@@ -130,6 +135,8 @@
 
 		@include vp-767 {
 			grid-template-columns: repeat(2, 1fr);
+			max-width: 280px;
+			gap: 20px 40px;
 		}
 	}
 
@@ -140,6 +147,10 @@
 		align-items: center;
 		position: relative;
 
+		@include vp-767 {
+			gap: 0;
+		}
+
 		&:first-child, &:nth-child(3) {
 			@include vp-1023 {
 				margin: 0 0 auto;
@@ -149,6 +160,12 @@
 		&:nth-child(2), &:nth-child(4) {
 			@include vp-1023 {
 				margin: auto 0 0;
+			}
+		}
+
+		&:nth-child(4) {
+			@include vp-767 {
+				margin: 0 0 auto;
 			}
 		}
 
@@ -173,10 +190,18 @@
 			transform: translateX(-50%);
 		}
 
+		@include vp-767 {
+			top: -50px;
+		}
+
 		&--btm {
 			@include vp-1023 {
 				top: auto;
 				bottom: -60px;
+			}
+
+			@include vp-767 {
+				bottom: -50px;
 			}
 		}
 	}
@@ -201,6 +226,11 @@
 		@include vp-1023 {
 			font-size: 40px;
 			line-height: 40px;
+		}
+
+		@include vp-767 {
+			font-size: 28px;
+			line-height: 36px;
 		}
 	}
 
