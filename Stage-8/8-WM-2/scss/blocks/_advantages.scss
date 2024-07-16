@@ -7,7 +7,7 @@
 	}
 
 	@include vp-767 {
-		padding: 60px 0 110px;
+		padding: 60px 0;
 	}
 
 	&__wrapper {
@@ -28,7 +28,7 @@
 		}
 
 		@include vp-767 {
-			gap: 110px;
+			gap: 60px;
 		}
 	}
 
@@ -143,38 +143,49 @@
 	&__subitem {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 		align-items: center;
 		position: relative;
+		height: 100%;
+
+		@include vp-767 {
+			display: grid;
+			grid-template-rows: 40px 1fr;
+			justify-items: center;
+			align-items: start;
+			gap: 10px;
+
+			#{$root}__feature {
+				grid-row: 2;
+			}
+		}
+
+		&:nth-child(even) {
+			@include vp-1023 {
+				justify-content: end;
+			}
+		}
+
+		&:nth-child(3n),
+		&:nth-child(4n) {
+			@include vp-767 {
+				grid-template-rows: 1fr 40px;
+
+				#{$root}__feature {
+					grid-row: 1;
+				}
+			}
+		}
+	}
+
+	&__feature {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
 
 		@include vp-767 {
 			gap: 0;
-		}
-
-		&:first-child, &:nth-child(3) {
-			@include vp-1023 {
-				margin: 0 0 auto;
-			}
-		}
-
-		&:nth-child(2), &:nth-child(4) {
-			@include vp-1023 {
-				margin: auto 0 0;
-			}
-		}
-
-		&:nth-child(4) {
-			@include vp-767 {
-				margin: 0 0 auto;
-			}
-		}
-
-		&:last-child {
-			#{$root}__unit {
-				@include vp-1023 {
-					padding-bottom: 10px;
-				}
-			}
 		}
 	}
 
@@ -184,25 +195,6 @@
 
 		@include vp-1023 {
 			display: flex;
-			position: absolute;
-			top: -60px;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-
-		@include vp-767 {
-			top: -50px;
-		}
-
-		&--btm {
-			@include vp-1023 {
-				top: auto;
-				bottom: -60px;
-			}
-
-			@include vp-767 {
-				bottom: -50px;
-			}
 		}
 	}
 

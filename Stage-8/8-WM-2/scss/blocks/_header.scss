@@ -45,6 +45,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 70px 0 0;
+    cursor: pointer;
+    transition: opacity $transition-300;
 
     @include vp-1023 {
       width: 47px;
@@ -53,6 +55,11 @@
 
     @include vp-767 {
       margin: 0 69px 0 0;
+    }
+
+    &:hover, &:focus-visible {
+      opacity: 0.8;
+      outline:none;
     }
 
     svg {
@@ -71,6 +78,7 @@
     width: 114px;
     display: flex;
     color: $color-blue-charcoa;
+    transition: opacity $transition-300;
 
     &:hover,
     &:focus-visible {
@@ -153,6 +161,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity $transition-300;
 
     &:hover,
     &:focus-visible {

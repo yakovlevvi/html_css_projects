@@ -49,6 +49,7 @@
   &__logo-link {
     color: $color-white;
     margin: 0 0 40px;
+    transition: opacity $transition-300;
 
     &:hover,
     &:focus-visible {
@@ -91,6 +92,8 @@
     line-height: 26px;
     color: $color-white;
     display: flex;
+    transition: opacity $transition-300;
+
 
     &:hover,
     &:focus-visible {
