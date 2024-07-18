@@ -2,7 +2,7 @@
 	$root: &;
 
 	&--list {
-		.main-nav__menu-btn--list {
+		.tag__menu-btn--list {
 			color: $color-blue-charcoa;
 			pointer-events: none;
 		}
@@ -32,7 +32,7 @@
 	}
 
 	&--grid {
-		.main-nav__menu-btn--grid {
+		.tag__menu-btn--grid {
 			color: $color-blue-charcoa;
 			pointer-events: none;
 		}
