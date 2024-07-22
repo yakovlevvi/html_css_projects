@@ -1,0 +1,56 @@
+.btn {
+	align-items: center;
+	background-color: $color-free-speech-blue;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	color: $color-white;
+	display: flex;
+	font-size: 18px;
+	justify-content: center;
+	line-height: 24.3px;
+	padding: 16px;
+	transition: background-color $transition-300;
+	$root: &;
+
+	@include vp-1023 {
+		font-size: 16px;
+		line-height: 21.6px;
+	}
+
+	&:hover,
+	&:focus-visible {
+		background-color: $color-free-speech-blue-2;
+	}
+
+	&:disabled,
+	&--disabled {
+		pointer-events: none;
+		background-color: $color-portage;
+	}
+
+	&--secondary {
+		background-color: transparent;
+		color: $color-night-rider;
+		border-color: $color-free-speech-blue;
+		transition: background-color $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $color-free-speech-blue-2;
+			border-color: $color-free-speech-blue-2;
+			color: $color-white;
+		}
+
+		&:disabled {
+			border-color: $color-portage;
+			color: $color-shuttle-grey;
+			background-color: transparent;
+		}
+	}
+
+	&--secondary.btn--disabled {
+		border-color: $color-portage;
+		color: $color-shuttle-grey;
+		background-color: transparent;
+	}
+}
