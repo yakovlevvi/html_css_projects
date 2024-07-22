@@ -80,7 +80,7 @@
     stroke-dasharray: 2800;
     stroke-dashoffset: 2800;
     transition: stroke-dashoffset ease-in 1s 0.5s, opacity $transition-300;
-    //animation: dashOffsetOut 2s ease-in forwards;
+    pointer-events: none;
 
     @media (max-width: 1480px) {
       height: 409px;

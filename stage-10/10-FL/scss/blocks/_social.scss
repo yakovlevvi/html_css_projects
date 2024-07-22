@@ -13,7 +13,7 @@
     height: 56px;
     justify-content: center;
     outline: none;
-    transition: $transition-300;
+    transition: background-color $transition-300;
     width: 56px;
 
     @include vp-1023 {

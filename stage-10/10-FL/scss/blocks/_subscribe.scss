@@ -19,6 +19,9 @@
       #{$root}__decor {
         stroke-dashoffset: 3100;
       }
+      #{$root}__img {
+        filter: brightness(1.3);
+      }
     }
 
     @include vp-1023 {
@@ -68,6 +71,7 @@
     z-index: -1;
     stroke-dasharray: 3000;
     transition: stroke-dashoffset ease-in 1s;
+    pointer-events: none;
 
     @include vp-1023 {
       display: none;
@@ -191,6 +195,7 @@
     min-height: 552px;
     width: 872px;
     height: 100%;
+    transition: filter $transition-300;
 
     @include vp-1023 {
       width: 100%;

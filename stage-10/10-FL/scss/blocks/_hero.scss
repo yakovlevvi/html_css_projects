@@ -24,7 +24,8 @@
     stroke-dasharray: 5100;
     stroke-dashoffset: 5100;
     stroke-width: 300;
-    top: -67px !important;
+    top: -67px;
+    pointer-events: none;
 
     transform: translateX(-50%);
 
