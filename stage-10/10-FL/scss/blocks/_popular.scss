@@ -1,5 +1,5 @@
 .popular {
-  margin: 0 0 95px 0;
+  margin: 0 0 99px 0;
   $root: &;
 
   @include vp-1023 {
@@ -129,6 +129,8 @@
 
   &__img {
     transition: transform $transition-300;
+    width: 428px;
+    height: 480px;
 
     @include vp-1023 {
       width: 344px;

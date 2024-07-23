@@ -120,9 +120,3 @@
     }
   }
 }
-
-.transformationss__item--mobile {
-  @include vp-1023 {
-    display: none;
-  }
-}
